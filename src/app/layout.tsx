@@ -11,6 +11,13 @@ import { Suspense } from 'react';
 export const metadata = {
   title: 'Directorate of Census Operations, Tripura',
   description: 'Official Government Portal for Census Data of Tripura state',
+  icons: { icon: '/favicon.ico' }
+};
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 };
 
 export default function RootLayout({
@@ -20,9 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.ico" />
-      </head>
       <body>
         <LanguageProviderWrapper>
           {/* Top Accessibility Bar */}
@@ -64,7 +68,7 @@ export default function RootLayout({
           }}>
             {/* Main Branding Area - CENTERED */}
             <div className="container brand-header">
-              <div style={{ width: '75px', height: '90px', position: 'relative', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+              <div style={{ width: '80px', height: '95px', minWidth: '60px', position: 'relative', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
                 <img src="/emblem.svg" alt="Emblem of India" style={{ width: '100%', height: '100%', objectFit: 'contain', filter: 'brightness(0) invert(1) drop-shadow(0 2px 4px rgba(0,0,0,0.3))' }} />
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', textAlign: 'center' }}>
