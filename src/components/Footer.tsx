@@ -44,7 +44,7 @@ export default function Footer() {
         <p>This is the official Website of the Directorate of Census Operations, Tripura (Government of India).</p>
         <p style={{ marginTop: '8px' }}>© {new Date().getFullYear()} DCO Tripura. Hosted by Directorate of Census Operations, Tripura.</p>
         <p style={{ marginTop: '12px', fontSize: '0.75rem', color: '#4f4d4dff', fontWeight: 400, letterSpacing: '0.04em' }}>
-          Developed by: Sumraj Saha | Bishal Debnath | Saikat Kar | Nayanika Saha
+          Developed by: Sumraj Saha | Bishal Debnath | Nayanika Saha
         </p>
       </div>
     </footer>
