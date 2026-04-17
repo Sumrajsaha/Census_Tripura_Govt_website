@@ -79,22 +79,7 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
       </button>
 
       {open && (
-        <div style={{
-          position: 'absolute',
-          top: 'calc(100% + 6px)',
-          left: '50%',
-          transform: 'translateX(-50%)',
-          minWidth: '260px',
-          maxHeight: '70vh',
-          overflowY: 'auto',
-          backgroundColor: '#fff',
-          borderRadius: '8px',
-          boxShadow: '0 12px 30px rgba(0,0,0,0.18)',
-          padding: '8px 0',
-          zIndex: 2000,
-          border: '1px solid #e2e8f0',
-          borderTop: '3px solid var(--secondary-color)',
-        }}>
+        <div className="dropdown-menu-box">
           {item.children.map(child => (
             <Link
               key={child.path}
@@ -102,20 +87,7 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
               target={child.path.startsWith('http') ? '_blank' : undefined}
               rel={child.path.startsWith('http') ? 'noopener noreferrer' : undefined}
               onClick={() => setOpen(false)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '8px',
-                padding: '10px 20px',
-                color: '#1e293b',
-                fontSize: '0.88rem',
-                fontWeight: 600,
-                textDecoration: 'none',
-                transition: 'background 0.15s',
-                whiteSpace: 'nowrap',
-              }}
-              onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#f1f5f9')}
-              onMouseLeave={e => (e.currentTarget.style.backgroundColor = 'transparent')}
+              className="dropdown-menu-link"
             >
               {t(child.name)}
             </Link>

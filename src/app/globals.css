@@ -309,6 +309,41 @@ a {
   border-color: var(--secondary-color) !important;
 }
 
+/* ── Dynamic Dropdown System ── */
+.dropdown-menu-box {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 260px;
+  max-height: 70vh;
+  overflow-y: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  padding: 8px 0;
+  z-index: 2000;
+  border: 1px solid #e2e8f0;
+  border-top: 3px solid var(--secondary-color);
+}
+
+.dropdown-menu-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  color: #1e293b;
+  font-size: 0.88rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.dropdown-menu-link:hover {
+  background-color: #f1f5f9;
+}
+
 /* ══════════════════════════════════════════
    LAYOUT & RESPONSIVE
    ══════════════════════════════════════════ */
@@ -408,7 +443,36 @@ a {
     box-shadow: 0 14px 28px rgba(0,0,0,0.25);
   }
 
-  .mascot-container { display: none; }
+  .dropdown-menu-box {
+    position: static;
+    transform: none;
+    left: auto;
+    top: auto;
+    width: 100%;
+    min-width: unset;
+    max-height: none;
+    box-shadow: none;
+    border: none;
+    border-left: 2px solid var(--secondary-color);
+    border-radius: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    background-color: transparent;
+  }
+
+  .dropdown-menu-link {
+    color: white;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    white-space: normal;
+  }
+
+  .dropdown-menu-link:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: var(--secondary-color);
+  }
+
+  .mascot-container { transform: scale(0.75); margin: -20px 0; }
   .hero-title       { font-size: 3.2rem; }
   .hero-subtitle    { font-size: 2.8rem; }
   .hero-slogan      { font-size: 1.3rem; }

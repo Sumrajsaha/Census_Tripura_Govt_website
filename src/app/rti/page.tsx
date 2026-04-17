@@ -41,11 +41,11 @@ export default function RTIPage() {
                 flexShrink: 0,
               }}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-                  <polyline points="14 2 14 8 20 8"/>
-                  <line x1="16" y1="13" x2="8" y2="13"/>
-                  <line x1="16" y1="17" x2="8" y2="17"/>
-                  <polyline points="10 9 9 9 8 9"/>
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="16" y1="13" x2="8" y2="13" />
+                  <line x1="16" y1="17" x2="8" y2="17" />
+                  <polyline points="10 9 9 9 8 9" />
                 </svg>
               </div>
               <span style={{ fontSize: '0.85rem', color: '#64748b', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
@@ -96,14 +96,7 @@ export default function RTIPage() {
           padding: '30px 40px',
           boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
         }}>
-          <h3 style={{ color: 'var(--primary-color)', fontSize: '1.2rem', fontWeight: 700, marginBottom: '12px' }}>
-            Proactive Disclosures
-          </h3>
-          <div style={{ width: '50px', height: '3px', backgroundColor: 'var(--secondary-color)', marginBottom: '18px' }}></div>
-          <p style={{ color: '#64748b', fontSize: '0.95rem', lineHeight: '1.8', margin: 0 }}>
-            Proactive disclosures under Section 4 of the RTI Act, details of the Central Public Information Officer (CPIO),
-            and First Appellate Authority (FAA) will be updated here shortly by the Directorate of Census Operations, Tripura.
-          </p>
+
         </div>
 
       </div>
