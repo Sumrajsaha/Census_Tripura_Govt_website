@@ -7,7 +7,7 @@ const images = [
   { src: '/tripura_palace_banner.png', alt: 'Ujjayanta Palace, Tripura' },
   { src: '/tripura_sundari_real.jpg', alt: 'Tripura Sundari Temple' },
   { src: '/tripura_neermahal_real.jpg', alt: 'Neermahal Water Palace' },
-  { src: '/tripura_chabimura_real.jpg', alt: 'Chabimura Rock Carvings' }
+  { src: '/Unakoti-rocks-Tripura-2.png', alt: 'Unakoti Rock Carvings' }
 ];
 
 export default function ImageSlider() {
