@@ -118,8 +118,8 @@ export default function Circulars() {
         Official circulars issued by the Office of the Registrar General &amp; Census Commissioner, India for Census 2027.
       </p>
 
-      <div style={{ marginTop: '30px', backgroundColor: 'white', padding: '0', borderRadius: 'var(--border-radius)', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', overflow: 'hidden' }}>
-        <table style={{ width: '100%', borderCollapse: 'collapse', textAlign: 'left' }}>
+      <div style={{ marginTop: '30px', backgroundColor: 'white', padding: '0', borderRadius: '8px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', overflowX: 'auto', overflowY: 'hidden' }}>
+        <table style={{ width: '100%', minWidth: '700px', borderCollapse: 'collapse', textAlign: 'left' }}>
           <thead>
             <tr style={{ backgroundColor: 'var(--primary-color)', color: 'white' }}>
               <th style={{ padding: '15px 20px', width: '60px' }}>S.No.</th>
