@@ -11,9 +11,6 @@ export default function GalleryPage() {
       <div className="premium-card" style={{ padding: '40px', maxWidth: '900px', margin: '0 auto', textAlign: 'center', marginBottom: '40px' }}>
         <h1 style={{ fontSize: '2.5rem', color: 'var(--primary-color)', marginBottom: '20px' }}>Photo Gallery</h1>
         <div style={{ width: '80px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '0 auto 30px' }}></div>
-        <p style={{ fontSize: '1.2rem', color: '#64748b', lineHeight: '1.8' }}>
-          Photographic archives covering field operations, high-level meetings, and civic engagements.
-        </p>
       </div>
 
       <div style={{
@@ -24,22 +21,22 @@ export default function GalleryPage() {
         margin: '0 auto'
       }}>
         {galleryImages.map((image, index) => (
-          <div 
-            key={index} 
-            className="premium-card" 
-            style={{ 
-              overflow: 'hidden', 
-              height: '300px', 
+          <div
+            key={index}
+            className="premium-card"
+            style={{
+              overflow: 'hidden',
+              height: '300px',
               position: 'relative',
               borderRadius: '12px'
             }}
           >
-            <Image 
-              src={image.src} 
-              alt={image.alt} 
-              fill 
+            <Image
+              src={image.src}
+              alt={image.alt}
+              fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-              style={{ objectFit: 'cover' }} 
+              style={{ objectFit: 'cover' }}
             />
           </div>
         ))}
