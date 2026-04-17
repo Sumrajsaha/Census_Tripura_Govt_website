@@ -434,13 +434,16 @@ a {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 20px;
+    padding: 15px 20px 30px 20px;
     background-color: var(--primary-color);
     position: absolute;
     top: 100%; left: 0; right: 0;
     z-index: 1000;
     border-top: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25);
+    max-height: calc(100vh - 80px); /* Leave space for top header */
+    overflow-y: auto; /* Enable scrolling for very long menus */
+    -webkit-overflow-scrolling: touch;
   }
 
   .dropdown-menu-box {
