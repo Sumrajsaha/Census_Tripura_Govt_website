@@ -421,12 +421,20 @@ a {
   display: none;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 35px;
+  align-items: start;
+}
+
 /* ══════════════════════════════════════════
    MEDIA QUERIES
    ══════════════════════════════════════════ */
 
 @media (max-width: 1024px) {
   .responsive-grid-3 { grid-template-columns: 1fr; }
+  .contact-grid { grid-template-columns: 1fr; gap: 20px; }
   .desktop-nav        { display: none; }
   .mobile-menu-btn    { display: block; margin-left: auto; }
 
@@ -434,15 +442,16 @@ a {
     display: flex !important;
     flex-direction: column;
     align-items: flex-start;
-    padding: 15px 20px 30px 20px;
+    padding: 15px 20px 80px 20px;
     background-color: var(--primary-color);
     position: absolute;
     top: 100%; left: 0; right: 0;
     z-index: 1000;
     border-top: 1px solid rgba(255,255,255,0.1);
     box-shadow: 0 14px 28px rgba(0,0,0,0.25);
-    max-height: calc(100vh - 80px); /* Leave space for top header */
-    overflow-y: auto; /* Enable scrolling for very long menus */
+    max-height: 80vh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
     -webkit-overflow-scrolling: touch;
   }
 

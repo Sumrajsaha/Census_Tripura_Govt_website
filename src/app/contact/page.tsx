@@ -18,7 +18,7 @@ export default function Contact() {
       </div>
 
       <div className="container" style={{ padding: '50px 24px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.4fr', gap: '35px', alignItems: 'start' }}>
+        <div className="contact-grid">
 
           {/* Contact Details Card */}
           <div style={{ backgroundColor: '#fff', borderRadius: '12px', border: '1px solid #e2e8f0', boxShadow: '0 4px 20px rgba(0,0,0,0.05)', overflow: 'hidden' }}>
