@@ -29,7 +29,25 @@ export default function AccountsEstablishmentStorePage() {
         <section style={card}>
           <h2 style={sectionHeading}>Accounts Section</h2>
           <p style={para}>
-            Detailed information regarding the Accounts Section will be updated soon.
+            The Accounts Section plays a vital role in maintaining, financial discipline and transparency within the organization. It is responsible for proper accounting of all financial transactions in accordance with prescribed rules and government regulations.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            The section handles processing of bills, preparation and maintenance of accounts, and timely disbursement of payments through various modes including cheques. It also manages collection and accounting of license fees and other receipts.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            In addition, the Accounts Section deals with various types of claims such as Medical Reimbursement, Leave Travel Concession (LTC), Travelling Allowance (TA), and other related claims, ensuring their timely processing and settlement.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            The section also handles important service-related financial matters including General Provident Fund (GPF), pension cases, and leave encashment, ensuring accurate processing and compliance with applicable rules.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            Further, it is responsible for handling statutory financial matters such as deduction and deposit of taxes, including Income Tax and other applicable taxes, in compliance with relevant laws and guidelines.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            The Accounts Section undertakes budget monitoring, expenditure control, and preparation of financial reports. Regular monitoring of expenditure is carried out through preparation of weekly statements (Weekly LOP) as well as monthly returns, ensuring efficient utilization of funds and proper financial control.
+          </p>
+          <p style={{ ...para, marginTop: '14px' }}>
+            The section also assists in internal and external audits and works in close coordination with other sections to ensure smooth financial operations and effective financial management.
           </p>
         </section>
 

@@ -5,7 +5,7 @@ export default function DDUSPage() {
         <h1 style={{ fontSize: '2.5rem', color: 'var(--primary-color)', marginBottom: '20px' }}>Data Dissemination Unit (DDU)</h1>
         <div style={{ width: '80px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '0 auto 30px' }}></div>
         <p style={{ fontSize: '1.2rem', color: '#64748b', lineHeight: '1.8' }}>
-          Information and services provided by the Data Dissemination Unit will be detailed here shortly.
+          Detailed information regarding the Data Dissemination Unit (DDU) will be updated soon.
         </p>
       </div>
     </div>
