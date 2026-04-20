@@ -227,7 +227,7 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
               <h3 style={{ fontSize: '1.2rem', marginBottom: '10px', color: 'var(--primary-color)' }}>{t("Gazette Notifications")}</h3>
               <p style={{ color: '#64748b', fontSize: '0.9rem', lineHeight: 1.6, marginBottom: '18px', flex: 1 }}>{t("Official gazette notifications issued by the Government of Tripura and by the ORGI.")}</p>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                <a href="#" style={{
+                <a href="/tripura-gazette" style={{
                   display: 'flex', alignItems: 'center', gap: '8px',
                   padding: '8px 14px', borderRadius: '6px',
                   backgroundColor: '#eff6ff', color: '#1d4ed8',
