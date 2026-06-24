@@ -257,7 +257,10 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
   const [language, setLanguage] = useState<Language>('hi');
 
   useEffect(() => {
-    const saved = localStorage.getItem('appLang') as Language;
+    // Clear any persistent localStorage to ensure the landing page defaults to Hindi
+    localStorage.removeItem('appLang');
+    
+    const saved = sessionStorage.getItem('appLang') as Language;
     if (saved === 'en' || saved === 'hi') {
       setLanguage(saved);
     }
@@ -265,7 +268,7 @@ export const LanguageProvider = ({ children }: { children: React.ReactNode }) =>
 
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    localStorage.setItem('appLang', lang);
+    sessionStorage.setItem('appLang', lang);
   };
 
   const t = (key: string) => {
