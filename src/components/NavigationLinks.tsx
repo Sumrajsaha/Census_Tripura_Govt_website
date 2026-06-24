@@ -107,10 +107,13 @@ export default function NavigationLinks() {
       name: 'About Us',
       path: '/about',
       children: [
-        { name: 'Organization Chart', path: 'https://censusindia.gov.in/census.website/sites/default/files/2026-01/Latest%20Organization%20Chart_Eng.png' },
-        { name: 'Our Directory', path: '/about/organization' },
+        { name: 'Meet the Registrar General of India', path: '/about/rgi' },
+        { name: 'Meet the Director (Profile)', path: '/about/message' },
+        { name: 'Who is Who', path: '/about/who-is-who' },
+        { name: 'Organization Chart', path: '/about/org-chart' },
         { name: 'List of Directors', path: '/about/directors' },
-        { name: 'Message from Director', path: '/about/message' },
+        { name: 'DCO Functions', path: '/about/functions' },
+        { name: 'Directory (of Current Officials)', path: '/about/directory' },
       ],
     },
     {

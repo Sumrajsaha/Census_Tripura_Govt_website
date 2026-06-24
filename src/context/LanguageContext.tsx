@@ -35,6 +35,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "Directory": "Directory",
     "List of Directors": "List of Directors",
     "Message from Director": "Message from Director",
+    "Meet the Registrar General of India": "Meet the Registrar General of India",
+    "Meet the Director (Profile)": "Meet the Director (Profile)",
+    "Who is Who": "Who is Who",
+    "DCO Functions": "DCO Functions",
+    "Directory (of Current Officials)": "Directory (of Current Officials)",
 
     // Navigation — Our Sections sub-items
     "Census": "Census",
@@ -147,6 +152,11 @@ export const translations: Record<Language, Record<string, string>> = {
     "Directory": "निर्देशिका",
     "List of Directors": "निदेशकों की सूची",
     "Message from Director": "निदेशक का संदेश",
+    "Meet the Registrar General of India": "भारत के महारजिस्ट्रार से मिलें",
+    "Meet the Director (Profile)": "निदेशक (प्रोफ़ाइल) से मिलें",
+    "Who is Who": "कौन कौन है (अधिकारी)",
+    "DCO Functions": "निदेशालय के कार्य",
+    "Directory (of Current Officials)": "वर्तमान अधिकारियों की निर्देशिका",
 
     // Navigation — Our Sections sub-items
     "Census": "जनगणना अनुभाग",
@@ -244,7 +254,7 @@ const LanguageContext = createContext<LanguageContextProps>({
 });
 
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
-  const [language, setLanguage] = useState<Language>('en');
+  const [language, setLanguage] = useState<Language>('hi');
 
   useEffect(() => {
     const saved = localStorage.getItem('appLang') as Language;
