@@ -256,19 +256,8 @@ const LanguageContext = createContext<LanguageContextProps>({
 export const LanguageProvider = ({ children }: { children: React.ReactNode }) => {
   const [language, setLanguage] = useState<Language>('hi');
 
-  useEffect(() => {
-    // Clear any persistent localStorage to ensure the landing page defaults to Hindi
-    localStorage.removeItem('appLang');
-    
-    const saved = sessionStorage.getItem('appLang') as Language;
-    if (saved === 'en' || saved === 'hi') {
-      setLanguage(saved);
-    }
-  }, []);
-
   const handleSetLanguage = (lang: Language) => {
     setLanguage(lang);
-    sessionStorage.setItem('appLang', lang);
   };
 
   const t = (key: string) => {
