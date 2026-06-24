@@ -30,7 +30,7 @@ export default function MessagePage() {
             boxShadow: '0 4px 12px rgba(0,0,0,0.05)',
             border: '1px solid #e2e8f0'
           }}>
-            <h3 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', margin: '0 0 4px', fontWeight: 700 }}>Mr. Ratan Biswas, IAS</h3>
+            <h3 style={{ color: 'var(--primary-color)', fontSize: '1.1rem', margin: '0 0 4px', fontWeight: 700 }}>Shri Ratan Biswas, IAS</h3>
             <p style={{ color: '#64748b', fontSize: '0.8rem', margin: 0, fontWeight: 600, letterSpacing: '0.02em' }}>Director, DCO Tripura</p>
           </div>
         </div>
