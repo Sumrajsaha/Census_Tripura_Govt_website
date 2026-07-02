@@ -30,7 +30,7 @@ export default function RootLayout({
       <body>
         <LanguageProviderWrapper>
           {/* Top Accessibility Bar */}
-          <div style={{ background: 'linear-gradient(90deg, #0D1F15 0%, #1B4332 100%)', color: '#A7C5B4', padding: '7px 0', fontSize: '0.78rem', fontWeight: 600, borderBottom: '1px solid rgba(201,169,75,0.25)' }}>
+          <div style={{ background: 'linear-gradient(90deg, var(--footer-bg) 0%, var(--primary-color) 100%)', color: 'var(--footer-text)', padding: '7px 0', fontSize: '0.78rem', fontWeight: 600, borderBottom: '1px solid var(--secondary-color)' }}>
             <div className="container top-bar-container">
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'center' }}>
                 <TranslatedText text="GOVERNMENT OF INDIA" style={{ color: '#ffffff', fontWeight: 600 }} />
@@ -59,12 +59,12 @@ export default function RootLayout({
 
           {/* Sticky Regal Header */}
           <header style={{
-            background: 'linear-gradient(160deg, #1B4332 0%, #0D1F15 60%, #0A1A0F 100%)',
+            background: 'linear-gradient(160deg, var(--primary-color) 0%, var(--footer-bg) 60%, var(--primary-color) 100%)',
             color: 'white',
             position: 'sticky',
             top: 0,
             zIndex: 1000,
-            boxShadow: '0 4px 20px rgba(0,0,0,0.3), 0 1px 0 rgba(201,169,75,0.3)'
+            boxShadow: '0 4px 20px rgba(0,0,0,0.3), 0 1px 0 rgba(232,122,0,0.3)'
           }}>
             {/* Main Branding Area - CENTERED */}
             <div className="container brand-header">
@@ -89,7 +89,7 @@ export default function RootLayout({
             </div>
 
             {/* Dedicated Full-Width Navigation Row */}
-            <div style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3))', borderTop: '1px solid rgba(201,169,75,0.15)', borderBottom: '3px solid #C9A94B', overflow: 'visible', position: 'relative', zIndex: 999 }}>
+            <div style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3))', borderTop: '1px solid var(--secondary-color)', borderBottom: '3px solid var(--secondary-color)', overflow: 'visible', position: 'relative', zIndex: 999 }}>
               <div className="container" style={{ display: 'flex', justifyContent: 'center', overflow: 'visible', position: 'relative' }}>
                 <Suspense fallback={<div style={{ padding: '10px' }}>Loading Navigation...</div>}>
                   <NavigationLinks />

@@ -14,13 +14,13 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
         position: 'relative',
         width: '100%',
         height: '620px',
-        backgroundColor: '#0D1F15',
+        backgroundColor: 'var(--footer-bg)',
         overflow: 'hidden',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
         color: 'white',
-        borderBottom: '3px solid #C9A94B'
+        borderBottom: '3px solid var(--secondary-color)'
       }}>
         <ImageSlider />
 
@@ -33,8 +33,8 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
 
         <div style={{ position: 'relative', zIndex: 10, textAlign: 'center', padding: '0 20px' }}>
           <span style={{
-            background: 'linear-gradient(135deg, #C9A94B, #F0D585)',
-            color: '#1B4332',
+            background: 'linear-gradient(135deg, var(--secondary-color), var(--secondary-light))',
+            color: 'var(--footer-bg)',
             padding: '5px 18px', borderRadius: '20px', fontSize: '0.8rem',
             fontWeight: 800, letterSpacing: '0.18em', textTransform: 'uppercase',
             boxShadow: '0 4px 15px rgba(201,169,75,0.45)', display: 'inline-block', marginBottom: '20px'
@@ -86,12 +86,12 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
             }}>
               {/* Header bar */}
               <div style={{
-                background: 'linear-gradient(135deg, #1B4332, #2D6A4F)',
+                background: 'linear-gradient(135deg, var(--primary-color), var(--primary-light))',
                 padding: '14px 20px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '10px',
-                borderBottom: '2px solid #C9A94B'
+                borderBottom: '2px solid var(--secondary-color)'
               }}>
                 <span style={{
                   width: '8px', height: '8px', borderRadius: '50%',
@@ -135,7 +135,7 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
               {/* Footer */}
               <div style={{ padding: '10px 20px', borderTop: '1px solid #E8EDE8', backgroundColor: '#F9FBF9' }}>
                 <a href="/circulars" style={{
-                  fontSize: '0.82rem', fontWeight: 700, color: '#1B4332',
+                  fontSize: '0.82rem', fontWeight: 700, color: 'var(--primary-color)',
                   textDecoration: 'none', display: 'flex', alignItems: 'center', gap: '5px'
                 }}>
                   {t("View All Circulars & Updates")} →
