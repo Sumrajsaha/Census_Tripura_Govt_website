@@ -9,8 +9,8 @@ export default function GalleryPage() {
   const isHi = language === 'hi';
 
   useEffect(() => {
-    document.title = isHi 
-      ? 'फोटो एवं वीडियो गैलरी | जनगणना कार्य निदेशालय' 
+    document.title = isHi
+      ? 'फोटो एवं वीडियो गैलरी | जनगणना कार्य निदेशालय'
       : 'Photo & Video Gallery | DCO Tripura';
   }, [isHi]);
 
@@ -19,9 +19,8 @@ export default function GalleryPage() {
   const [selectedVideo, setSelectedVideo] = useState<string | null>(null);
 
   const galleryImages = [
-    { src: '/G-1.jpeg', altEn: 'Census Field Training Operations', altHi: 'जनगणना फील्ड प्रशिक्षण गतिविधियाँ' },
-    { src: '/G-2.jpeg', altEn: 'Official Awareness Campaigns', altHi: 'आधिकारिक जागरूकता अभियान' },
-    { src: '/G-3.jpeg', altEn: 'DCO Tripura Regional Conference', altHi: 'जनगणना कार्य निदेशालय त्रिपुरा क्षेत्रीय सम्मेलन' },
+    { src: '/G-1.jpeg', altEn: '.', altHi: 'जनगणना फील्ड प्रशिक्षण गतिविधियाँ' },
+    { src: '/G-3.jpeg', altEn: '.', altHi: 'जनगणना कार्य निदेशालय त्रिपुरा क्षेत्रीय सम्मेलन' },
   ];
 
   const galleryVideos = [
@@ -63,7 +62,7 @@ export default function GalleryPage() {
       </div>
 
       <div className="container" style={{ padding: '50px 24px' }}>
-        
+
         {/* Tab Controls */}
         <div style={{ display: 'flex', justifyContent: 'center', gap: '15px', marginBottom: '40px' }}>
           <button
@@ -214,7 +213,7 @@ export default function GalleryPage() {
 
       {/* Photo Lightbox Modal */}
       {selectedImage && (
-        <div 
+        <div
           style={{
             position: 'fixed',
             top: 0, left: 0,
@@ -226,7 +225,7 @@ export default function GalleryPage() {
           }}
           onClick={() => setSelectedImage(null)}
         >
-          <button 
+          <button
             style={{
               position: 'absolute', top: '20px', right: '30px',
               background: 'transparent', border: 'none', color: 'white',
@@ -245,7 +244,7 @@ export default function GalleryPage() {
 
       {/* Video Lightbox Modal */}
       {selectedVideo && (
-        <div 
+        <div
           style={{
             position: 'fixed',
             top: 0, left: 0,
@@ -257,7 +256,7 @@ export default function GalleryPage() {
           }}
           onClick={() => setSelectedVideo(null)}
         >
-          <button 
+          <button
             style={{
               position: 'absolute', top: '20px', right: '30px',
               background: 'transparent', border: 'none', color: 'white',
