@@ -33,7 +33,7 @@ export default function GalleryPage() {
             {isHi ? 'गैलरी' : 'Gallery'}
           </p>
           <h1 style={{ color: '#fff', fontSize: '2.2rem', fontWeight: 700, margin: 0 }}>
-            {isHi ? 'फोटो गैलरी 2027' : 'Photo Gallery 2027'}
+            {isHi ? 'फोटो गैलरी' : 'Photo Gallery'}
           </h1>
         </div>
       </div>
@@ -42,46 +42,46 @@ export default function GalleryPage() {
 
         {/* Photos Grid */}
         <div style={{
-            display: 'grid',
-            gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
-            gap: '24px',
-            maxWidth: '1200px',
-            margin: '0 auto'
-          }}>
-            {galleryImages.map((image, index) => (
-              <div
-                key={index}
-                className="premium-card"
-                style={{
-                  overflow: 'hidden',
-                  height: '280px',
-                  position: 'relative',
-                  borderRadius: '16px',
-                  cursor: 'pointer',
-                  border: '1px solid #e2e8f0',
-                  boxShadow: '0 4px 15px rgba(0,0,0,0.02)',
-                  backgroundColor: 'white'
-                }}
-                onClick={() => setSelectedImage(image.src)}
-              >
-                <div style={{ width: '100%', height: '80%', position: 'relative' }}>
-                  <Image
-                    src={image.src}
-                    alt={isHi ? image.altHi : image.altEn}
-                    fill
-                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                    style={{ objectFit: 'cover', transition: 'transform 0.3s ease' }}
-                    className="hover-zoom"
-                  />
-                </div>
-                <div style={{ padding: '12px 18px', height: '20%', display: 'flex', alignItems: 'center', backgroundColor: '#fff' }}>
-                  <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, color: 'var(--primary-color)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
-                    {isHi ? image.altHi : image.altEn}
-                  </p>
-                </div>
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))',
+          gap: '24px',
+          maxWidth: '1200px',
+          margin: '0 auto'
+        }}>
+          {galleryImages.map((image, index) => (
+            <div
+              key={index}
+              className="premium-card"
+              style={{
+                overflow: 'hidden',
+                height: '280px',
+                position: 'relative',
+                borderRadius: '16px',
+                cursor: 'pointer',
+                border: '1px solid #e2e8f0',
+                boxShadow: '0 4px 15px rgba(0,0,0,0.02)',
+                backgroundColor: 'white'
+              }}
+              onClick={() => setSelectedImage(image.src)}
+            >
+              <div style={{ width: '100%', height: '80%', position: 'relative' }}>
+                <Image
+                  src={image.src}
+                  alt={isHi ? image.altHi : image.altEn}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  style={{ objectFit: 'cover', transition: 'transform 0.3s ease' }}
+                  className="hover-zoom"
+                />
               </div>
-            ))}
-          </div>
+              <div style={{ padding: '12px 18px', height: '20%', display: 'flex', alignItems: 'center', backgroundColor: '#fff' }}>
+                <p style={{ margin: 0, fontSize: '0.85rem', fontWeight: 600, color: 'var(--primary-color)', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                  {isHi ? image.altHi : image.altEn}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
 
       </div>
 
