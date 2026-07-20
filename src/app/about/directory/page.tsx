@@ -29,6 +29,13 @@ export default function DirectoryPage() {
       email: 'sksarkar.rgi@censusindia.gov.in'
     },
     {
+      name: 'Shri Subijit Deb Ray',
+      designationEn: 'Assistant Director (Technical)',
+      designationHi: 'सहायक निदेशक (तकनीकी)',
+      landline: '0381-2336442',
+      email: 'sdebray.rgi@censusindia.gov.in'
+    },
+    {
       name: 'Smt. Luna Tamuly',
       designationEn: 'Assistant Director (Technical)',
       designationHi: 'सहायक निदेशक (तकनीकी)',
@@ -36,11 +43,108 @@ export default function DirectoryPage() {
       email: 'ltamuly.rgi@censusindia.gov.in'
     },
     {
-      name: 'Shri Subijit Deb Ray',
-      designationEn: 'Assistant Director (Technical)',
-      designationHi: 'सहायक निदेशक (तकनीकी)',
+      name: 'Smt. Uma Das',
+      designationEn: 'Statistical Investigator Grade-I',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: 'sdebray.rgi@censusindia.gov.in'
+      email: '.'
+    }, {
+      name: 'Shri Bidyut Dasgupta',
+      designationEn: 'Statistical Investigator Grade-I',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Smt. Madhumita Choudhuri',
+      designationEn: 'Statistical Investigator Grade-I',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Arun Pratap Mishra',
+      designationEn: 'Assistant Registration Officer',
+      designationHi: 'सहायक पंजीकरण अधिकारी',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Swapan Sarkar',
+      designationEn: 'Office Superintendent',
+      designationHi: 'कार्यालय अधीक्षक',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Monojit Kumar Paul',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Ajay Shukla',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Pratap Dey',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Yash Chaurasiya',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Hrishi Sogarwal',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Rajeshwar Singha',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Subhadeep Raha',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Arupla Harshavardhan',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Murlidhar',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
+    },
+    {
+      name: 'Shri Rahul Das',
+      designationEn: 'Statistical Investigator Grade-II',
+      designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
+      landline: '0381-2336442',
+      email: '.'
     },
     {
       name: 'General Help Desk / Accounts / Estab.',
@@ -72,8 +176,8 @@ export default function DirectoryPage() {
               {isHi ? 'दूरभाष एवं ई-मेल निर्देशिका' : 'Landline Numbers & E-mail Directory'}
             </h2>
             <p style={{ color: '#64748b', fontSize: '0.98rem', marginTop: '8px' }}>
-              {isHi 
-                ? 'त्रिपुरा कार्यालय के वर्तमान अधिकारियों के दूरभाष संपर्क और ई-मेल पते की सूची।' 
+              {isHi
+                ? 'त्रिपुरा कार्यालय के वर्तमान अधिकारियों के दूरभाष संपर्क और ई-मेल पते की सूची।'
                 : 'Official contact details of the contemporary leadership and sections at DCO Tripura.'}
             </p>
             <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '15px auto 0' }}></div>
