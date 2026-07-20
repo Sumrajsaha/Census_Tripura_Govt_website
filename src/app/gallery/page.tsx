@@ -23,6 +23,7 @@ export default function GalleryPage() {
     { src: '/G-2.jpeg', altEn: '.', altHi: '.' },
     { src: '/G-3.jpeg', altEn: '.', altHi: 'जनगणना कार्य निदेशालय त्रिपुरा क्षेत्रीय सम्मेलन' },
     { src: '/G-4.jpeg', altEn: '.', altHi: 'जनगणना फील्ड प्रशिक्षण गतिविधियाँ' },
+    { src: '/G-5.jpeg', altEn: '.', altHi: 'जनगणना फील्ड प्रशिक्षण गतिविधियाँ' },
   ];
 
   const galleryVideos = [
