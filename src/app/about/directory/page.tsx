@@ -126,7 +126,7 @@ export default function DirectoryPage() {
       email: '.'
     },
     {
-      name: 'Shri Arupla Harshavardhan',
+      name: 'Shri Rahul Das',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
@@ -140,7 +140,7 @@ export default function DirectoryPage() {
       email: '.'
     },
     {
-      name: 'Shri Rahul Das',
+      name: 'Shri Arupla Harshavardhan',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
