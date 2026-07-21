@@ -12,139 +12,139 @@ export default function DirectoryPage() {
       designationEn: 'Director',
       designationHi: 'निदेशक',
       landline: '0381-2330134',
-      email: 'dco-tri.rgi@censusindia.gov.in'
+      email: 'ratan.biswas@gov.in'
     },
     {
       name: 'Shri Prosenjit Nath Choudhury',
       designationEn: 'Deputy Registrar General',
       designationHi: 'उप रजिस्ट्रार जनरल',
       landline: '0381-2336442',
-      email: 'pnchoudhury.rgi@censusindia.gov.in'
+      email: 'pnchoudhary.rgi@nic.in'
     },
     {
       name: 'Shri Sukla Kanta Sarkar',
       designationEn: 'Deputy Director',
       designationHi: 'उप निदेशक',
       landline: '0381-2336442',
-      email: 'sksarkar.rgi@censusindia.gov.in'
+      email: 'suklakantasarkar.rgi@nic.in '
     },
     {
       name: 'Shri Subijit Deb Ray',
       designationEn: 'Assistant Director (Technical)',
       designationHi: 'सहायक निदेशक (तकनीकी)',
       landline: '0381-2336442',
-      email: 'sdebray.rgi@censusindia.gov.in'
+      email: 'subijitdebroy.rgi@nic.in'
     },
     {
       name: 'Smt. Luna Tamuly',
       designationEn: 'Assistant Director (Technical)',
       designationHi: 'सहायक निदेशक (तकनीकी)',
       landline: '0381-2336442',
-      email: 'ltamuly.rgi@censusindia.gov.in'
+      email: 'lunatamuly.rgi@nic.in'
     },
     {
       name: 'Smt. Uma Das',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: '.'
+      email: 'umadas.rgi@nic.in '
     }, {
       name: 'Shri Bidyut Dasgupta',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: '.'
+      email: 'bidyutdas.rgi@nic.in'
     },
     {
       name: 'Smt. Madhumita Choudhuri',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: '.'
+      email: 'mchoudhury.rgi@nic.in'
     },
     {
       name: 'Shri Arun Pratap Mishra',
       designationEn: 'Assistant Registration Officer',
       designationHi: 'सहायक पंजीकरण अधिकारी',
       landline: '0381-2336442',
-      email: '.'
+      email: 'apmishra88.rgi@nic.in'
     },
     {
       name: 'Shri Swapan Sarkar',
       designationEn: 'Office Superintendent',
       designationHi: 'कार्यालय अधीक्षक',
       landline: '0381-2336442',
-      email: '.'
+      email: 'swapansarkar.rgi@nic.in'
     },
     {
       name: 'Shri Monojit Kumar Paul',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'monojit.rgi@nic.in'
     },
     {
       name: 'Shri Ajay Shukla',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'ajayshukla.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Pratap Dey',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'pmathdey.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Yash Chaurasiya',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'yash.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Hrishi Sogarwal',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'hrishi.rgi@nic.in'
     },
     {
       name: 'Shri Rajeshwar Singha',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'rajeshwar.singha@censusindia.gov.in'
     },
     {
       name: 'Shri Subhadeep Raha',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'sraha.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Rahul Das',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'rahul.ds@censusindia.gov.in'
     },
     {
       name: 'Shri Murlidhar',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'murlidhar.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Arupla Harshavardhan',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: '.'
+      email: 'arupula.harsha.rgi@censusindia.gov.in'
     },
     {
       name: 'General Help Desk / Accounts / Estab.',
