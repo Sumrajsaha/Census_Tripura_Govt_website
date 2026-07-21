@@ -73,45 +73,27 @@ export default function RGIProfilePage() {
               {isHi ? 'शीर्ष नेतृत्व' : 'Apex Leadership'}
             </h4>
             <h2 style={{ fontSize: '2.2rem', color: 'var(--primary-color)', lineHeight: 1.25, marginBottom: '20px', fontWeight: 800 }}>
-              {isHi ? 'कार्यालय का परिचय और दायित्व' : 'Introduction & Responsibilities of the Office'}
+              {isHi ? 'महारजिस्ट्रार का परिचय' : 'Meet the Registrar General & Census Commissioner'}
             </h2>
             <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--secondary-color)', marginBottom: '25px' }}></div>
 
             <div style={{ fontSize: '1.05rem', lineHeight: '1.8', color: '#334155', display: 'flex', flexDirection: 'column', gap: '20px' }}>
               {isHi ? (
                 <>
-                  <p>
-                    भारत के महारजिस्ट्रार एवं जनगणना आयुक्त (आरजीआई) का पद भारत सरकार के गृह मंत्रालय के अंतर्गत एक अत्यंत महत्वपूर्ण और वरिष्ठ प्रशासनिक पद है। इस गरिमामयी पद का दायित्व देश की जनसांख्यिकीय संरचना का वैज्ञानिक रूप से आंकलन और पंजीकरण प्रणाली को सुदृढ़ बनाना है।
-                  </p>
-                  <p>
-                    <strong>मुख्य जिम्मेदारियां:</strong>
-                  </p>
-                  <ul style={{ paddingLeft: '20px', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    <li><strong>दशकीय जनगणना संचालन:</strong> पूरे भारतवर्ष में दस वर्षीय राष्ट्रीय जनसंख्या जनगणना का योजनाबद्ध नियोजन, संचालन और पर्यवेक्षण करना।</li>
-                    <li><strong>नागरिक पंजीकरण प्रणाली (CRS):</strong> जन्म और मृत्यु पंजीकरण अधिनियम, 1969 के अंतर्गत देश में जन्म, मृत्यु और मृत जन्म के पंजीकरण कार्यों का समन्वय और एकीकरण करना।</li>
-                    <li><strong>नमूना पंजीकरण प्रणाली (SRS):</strong> देश में जन्म दर, मृत्यु दर और शिशु मृत्यु दर के विश्वसनीय वार्षिक अनुमान प्रदान करने हेतु वृहद जनसांख्यिकीय सर्वेक्षण का संचालन सुनिश्चित करना।</li>
-                    <li><strong>राष्ट्रीय जनसंख्या रजिस्टर (NPR):</strong> देश के सभी सामान्य निवासियों के व्यापक पहचान डेटाबेस के निर्माण संबंधी कार्यों का पर्यवेक्षण करना।</li>
-                  </ul>
-                  <p>
-                    आरजीआई के मार्गदर्शन में, देश की नीतियां, योजनाएं और सामाजिक-आर्थिक विकास के विभिन्न कार्यक्रमों का निर्धारण करने के लिए अत्यंत सटीक जनसांख्यिकीय आंकड़े उपलब्ध कराए जाते हैं।
-                  </p>
+                  <p>श्री मृत्युंजय कुमार नारायण ने 1 नवंबर, 2022 से भारत के महारजिस्ट्रार एवं जनगणना आयुक्त के रूप में कार्यभार ग्रहण किया। भारत के महारजिस्ट्रार के कार्यालय में कार्यभार ग्रहण करने से पूर्व वे गृह मंत्रालय में अपर सचिव थे। गृह मंत्रालय में अपर सचिव के रूप में पदोन्नति से पूर्व, वे वर्ष 2019-2021 में विद्युत मंत्रालय में संयुक्त सचिव थे।</p>
+                  <p>श्री नारायण उत्तर प्रदेश कैडर के 1995 बैच के भारतीय प्रशासनिक सेवा अधिकारी हैं। 25 से अधिक वर्षों के करियर में, उन्होंने उत्तर प्रदेश राज्य सरकार और भारत सरकार में विभिन्न भूमिकाओं और पदों पर विशिष्टता के साथ कार्य किया है। उन्हें लोक प्रशासन, नीति निर्माण, कराधान, स्वास्थ्य, कानून और व्यवस्था, आंतरिक सुरक्षा, पुलिसिंग और संबंधित क्षेत्रों में व्यापक अनुभव है।</p>
+                  <p>श्री नारायण ने आईआईटी कानपुर से इलेक्ट्रिकल इंजीनियरिंग में बी.टेक और एम.टेक, किंग्स कॉलेज लंदन से लोक नीति और प्रबंधन में एमएससी और लखनऊ विश्वविद्यालय से एलएलबी की डिग्री प्राप्त की है।</p>
                 </>
               ) : (
                 <>
                   <p>
-                    The Office of the Registrar General and Census Commissioner, India (ORGI) was established in 1961 under the Ministry of Home Affairs, Government of India. It provides vital leadership for conducting the decennial population Census and managing demographic surveys across the nation.
+                    Shri Mritunjay Kumar Narayan assumed the charge as Registrar General & Census Commissioner of India w.e.f. November 1, 2022. He has been Additional Secretary in the Ministry of Home Affairs before joining the office of Registrar General of India. Before his elevation as Additional Secretary in MHA, he was Joint Secretary in the Ministry of Power in the year 2019-2021.
                   </p>
                   <p>
-                    <strong>Key Responsibilities:</strong>
+                    Mr Narayan is 1995 batch Indian Administrative Service officer of Uttar Pradesh Cadre. In the career spanning more than 25 years, he has served with distinction in various roles and positions in the State Government of Uttar Pradesh and also in the Government of India. He has wide experience in Public Administration, Policy Making, Taxation, Health, Law & Order, Internal Security, Policing and related fields.
                   </p>
-                  <ul style={{ paddingLeft: '20px', listStyleType: 'disc', display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                    <li><strong>Decennial Population Census:</strong> Directing and executing the Census of India, which is one of the largest administrative and statistical exercises in the world.</li>
-                    <li><strong>Civil Registration System (CRS):</strong> Coordinating birth and death registration throughout the country under the Registration of Births and Deaths (RBD) Act, 1969.</li>
-                    <li><strong>Sample Registration System (SRS):</strong> Publishing annual demographic indicators like birth rates, death rates, and infant mortality rates through comprehensive survey systems.</li>
-                    <li><strong>National Population Register (NPR):</strong> Supervising the creation and maintenance of the National Population Register containing demographic information of residents.</li>
-                  </ul>
                   <p>
-                    Under the visionary leadership of the Registrar General of India, the organization strives to ensure the highest standards of data integrity, supporting national planning, evidence-based policy formulation, and research.
+                    Mr Narayan holds the degree of B.Tech and M.Tech in Electrical Engineering from IIT Kanpur, M.Sc. in Public Policy & Management from King's College London and LL.B from Lucknow University.
                   </p>
                 </>
               )}
