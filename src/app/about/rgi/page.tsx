@@ -39,9 +39,9 @@ export default function RGIProfilePage() {
               justifyContent: 'center'
             }}>
               <img
-                src="public/Mrutunjay.png"
-                alt="Emblem of India"
-                style={{ width: '80%', height: '80%', objectFit: 'contain', opacity: 0.85 }}
+                src="/Mrutunjay.png"
+                alt="Shri Mritunjay Kumar Narayan"
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             </div>
 
