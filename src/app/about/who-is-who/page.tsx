@@ -24,44 +24,44 @@ export default function WhoIsWhoPage() {
   };
 
   const spine = [
-    { role: t.director, name: 'Ratan Biswas, IAS' },
-    { role: t.drg, name: 'Prosenjit Nath Choudhury' },
-    { role: t.dd, name: 'Sukla Kanta Sarkar' },
+    { role: t.director, name: 'Shri Ratan Biswas, IAS' },
+    { role: t.drg, name: 'Shri Prosenjit Nath Choudhury' },
+    { role: t.dd, name: 'Shri Sukla Kanta Sarkar' },
     { type: 'row', items: [
-      { role: t.ad, name: 'Luna Tamuly' },
-      { role: t.ad, name: 'Subjit Deb Ray' }
+      { role: t.ad, name: 'Smt. Luna Tamuly' },
+      { role: t.ad, name: 'Shri Subijit Deb Ray' }
     ]},
-    { role: t.sg, name: 'Arun Pratap Mishra' },
-    { role: t.os, name: 'Swapan Sarkar' }
+    { role: t.sg, name: 'Shri Arun Pratap Mishra' },
+    { role: t.os, name: 'Shri Swapan Sarkar' }
   ];
 
   const branches = [
     [
-      { role: t.si1, name: 'Bidyut Das' },
-      { role: t.si2, name: 'Ajay Shukla' },
-      { role: t.si2, name: 'Monojit Kumar Paul' },
-      { role: t.si2, name: 'Rahul Das' },
-      { role: t.mts, name: 'Chinmoy Nath' },
-      { role: t.mts, name: 'Mahesh Dhanuk' },
-      { role: t.ca, name: 'Amalendu Das' },
+      { role: t.si1, name: 'Shri Bidyut Das' },
+      { role: t.si2, name: 'Shri Ajay Shukla' },
+      { role: t.si2, name: 'Shri Monojit Kumar Paul' },
+      { role: t.si2, name: 'Shri Rahul Das' },
+      { role: t.mts, name: 'Shri Chinmoy Nath' },
+      { role: t.mts, name: 'Shri Mahesh Dhanuk' },
+      { role: t.ca, name: 'Shri Amalendu Das' },
     ],
     [
-      { role: t.si1, name: 'Madhumita Choudhuri' },
-      { role: t.si2, name: 'Arupula Harshavardhan' },
-      { role: t.si2, name: 'Murlidhar' },
-      { role: t.si2, name: 'Subhadeep Raha' },
-      { role: t.mts, name: 'Dulal Rudra' },
-      { role: t.mts, name: 'Sandhya Rani Deb Barma' },
-      { role: t.ca, name: 'Bijoy Kumar Ghosh' },
+      { role: t.si1, name: 'Smt. Madhumita Choudhuri' },
+      { role: t.si2, name: 'Shri Arupula Harshavardhan' },
+      { role: t.si2, name: 'Shri Murlidhar' },
+      { role: t.si2, name: 'Shri Subhadeep Raha' },
+      { role: t.mts, name: 'Shri Dulal Rudra' },
+      { role: t.mts, name: 'Smt. Sandhya Rani Deb Barma' },
+      { role: t.ca, name: 'Shri Bijoy Kumar Ghosh' },
     ],
     [
-      { role: t.si1, name: 'Uma Das' },
-      { role: t.si2, name: 'Hrishi Soganwal' },
-      { role: t.si2, name: 'Pratap Dey' },
-      { role: t.si2, name: 'Yash Chaurasiya' },
-      { role: t.mts, name: 'Deepak Kumar' },
-      { role: t.mts, name: 'Sourav Kumar' },
-      { role: t.ca, name: 'Trisha Nath' },
+      { role: t.si1, name: 'Smt. Uma Das' },
+      { role: t.si2, name: 'Shri Hrishi Soganwal' },
+      { role: t.si2, name: 'Shri Pratap Dey' },
+      { role: t.si2, name: 'Shri Yash Chaurasiya' },
+      { role: t.mts, name: 'Shri Deepak Kumar' },
+      { role: t.mts, name: 'Shri Sourav Kumar' },
+      { role: t.ca, name: 'Smt. Trisha Nath' },
     ]
   ];
 
