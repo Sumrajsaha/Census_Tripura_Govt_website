@@ -22,7 +22,7 @@ export default function RGIProfilePage() {
 
       <div className="container" style={{ padding: '50px 24px' }}>
         <div className="premium-card" style={{ padding: '50px', maxWidth: '1100px', margin: '0 auto', display: 'flex', gap: '50px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-          
+
           {/* Profile Card Left */}
           <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
             <div style={{
@@ -38,13 +38,13 @@ export default function RGIProfilePage() {
               alignItems: 'center',
               justifyContent: 'center'
             }}>
-              <img 
-                src="/emblem.svg" 
-                alt="Emblem of India" 
-                style={{ width: '80%', height: '80%', objectFit: 'contain', opacity: 0.85 }} 
+              <img
+                src="public/Mrutunjay.png"
+                alt="Emblem of India"
+                style={{ width: '80%', height: '80%', objectFit: 'contain', opacity: 0.85 }}
               />
             </div>
-            
+
             <div style={{
               marginTop: '25px',
               padding: '16px 20px',
