@@ -25,7 +25,8 @@ const para: React.CSSProperties = {
   fontSize: '1rem',
   lineHeight: '1.8',
   color: '#334155',
-  margin: 0,
+  margin: '0 0 16px 0',
+  textAlign: 'justify',
 };
 
 export default function CensusTabulationPage() {
@@ -37,15 +38,6 @@ export default function CensusTabulationPage() {
       ? 'जनगणना एवं सारणीकरण | जनगणना कार्य निदेशालय' 
       : 'Census & Tabulation | DCO Tripura';
   }, [isHi]);
-
-  const series = [
-    { code: 'A-Series', en: 'General Population Tables', hi: 'सामान्य जनसंख्या सारणियाँ' },
-    { code: 'B-Series', en: 'Economic Tables', hi: 'आर्थिक सारणियाँ' },
-    { code: 'C-Series', en: 'Social and Cultural Tables', hi: 'सामाजिक और सांस्कृतिक सारणियाँ' },
-    { code: 'D-Series', en: 'Migration Tables', hi: 'प्रवासन सारणियाँ' },
-    { code: 'F-Series', en: 'Fertility Tables', hi: 'प्रजनन सारणियाँ' },
-    { code: 'H-Series', en: 'Housing Tables (HLO)', hi: 'आवास सारणियाँ (एचएलओ)' },
-  ];
 
   return (
     <div style={{ backgroundColor: '#f8fafc', minHeight: '75vh', paddingBottom: '60px' }}>
@@ -65,62 +57,39 @@ export default function CensusTabulationPage() {
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           
           <section style={card}>
-            <h2 style={sectionHeading}>{isHi ? 'प्रभाग की भूमिका' : 'Role of the Section'}</h2>
+            <h2 style={sectionHeading}>{isHi ? 'जनगणना कार्य' : 'Census Operations'}</h2>
             <p style={para}>
-              {isHi ? (
-                `जनगणना और सारणीकरण प्रभाग एकत्रित जनसांख्यिकीय डेटा के प्रसंस्करण, कोडिंग, वर्गीकरण और सारणीबद्ध प्रारूप में जनरेट करने के लिए जिम्मेदार है। यह अनुभाग जनगणना के क्षेत्र कार्यों के पूर्ण होने के पश्चात डेटा शुद्धता की जांच करता है और विभिन्न विषयों के आधार पर सांख्यिकीय रिपोर्टें तैयार करता है।`
-              ) : (
-                `The Census & Tabulation Section is responsible for processing, compiling, and converting primary demographic questionnaires into structured databases and tables. Once field enumeration completes, this branch performs data scrubbing and publishes categorized summaries.`
-              )}
+              Census Division assists the Registrar General and Census Commissioner, India for timely and successful conduct of Census Operations once in ten years in the country under the legal authority of the Census Act, 1948 and the Census Rules, 1990 and amendments made thereunder. The Directors of Census operations co-ordinate the work of census taking in the respective States/Union Territories. The last decennial population Census of India was conducted during 9th–28th February 2011 with a revisional round during 1st -5th March, 2011. The next Census was due in 2021 but the same has been postponed due to Covid-19 pandemic.
+            </p>
+            <p style={para}>
+              All matters relating to Census including planning, preparations, pre-testing of questions/ schedules, conduct of Census, tabulation from Census data and its dissemination are dealt with in this Division.
+            </p>
+            <p style={para}>
+              Population Census provides basic statistics on state of human resources, demography, culture and economic structure at local, regional and national level. All this information is vital to guide and shape the future course of the nation. Universality and simultaneity are the two key features of census. Therefore, taking count of a large population on India’s size is a phenomenal task. The ensuing decadal Census of India will be the 16th in series and 8th after independence. This is indeed a gigantic operation for which nearly thirty lakh Enumerators and Supervisors will be engaged to enumerate almost 135 crore (1.35 billion) people across the country. The enumerators and supervisors are mainly drawn from local school teachers, Central and State/UT government officials and officials of local bodies who will be visiting every household to canvass census schedules.
             </p>
           </section>
 
           <section style={card}>
-            <h2 style={sectionHeading}>{isHi ? 'डेटा प्रोसेसिंग और गुणवत्ता नियंत्रण' : 'Data Processing & Quality Checks'}</h2>
+            <h2 style={sectionHeading}>{isHi ? 'जनगणना के चरण' : 'Phases of Census'}</h2>
             <p style={para}>
-              {isHi ? (
-                `आगामी जनगणना 2027 में आधुनिक मोबाइल ऐप और डिजिटल उपकरणों के माध्यम से वास्तविक समय में डेटा संग्रहण किया जा रहा है। हमारा अनुभाग इन डिजिटल प्रविष्टियों की गुणवत्ता, संगति और क्षेत्रीय सीमाओं के अनुसार शुद्धता सुनिश्चित करने हेतु उन्नत डेटा विश्लेषण प्रणालियों का उपयोग करता है।`
-              ) : (
-                `With the transition to digital tools and mobile apps for the upcoming Census 2027 operations, our branch utilizes automated analytical pipelines to perform consistency checks and geographic validation on real-time field submissions.`
-              )}
+              The Census Operations in India have been carried out in two phases: - i) Houselisting and Housing Census and ii) Population Enumeration. During Houselisting and Housing Census, all buildings, Census Houses and Households are identified and systematically listed in the relevant schedules. It provides comprehensive data on the conditions of human settlements, housing deficit and consequently the housing requirements to be taken care of in the formulation of housing policies. This will also provide a wide range of data/information on amenities and assets available to the Households. This would also provide the base for Population Enumeration by giving a more realistic idea of the population size of the Houselisting blocks, thereby ensuring the more practical carving of the blocks for Population Enumeration.
+            </p>
+            <p style={para}>
+              The Population Enumeration follows the Housing Census within a gap of six to eight months. During the second phase of census taking, each person is enumerated and her/his individual particulars like Age, Marital status, Religion, Schedule Cast/Schedule Tribe, Mother tongue, Education level, Disability, Economic activity, Migration, Fertility (for female) are collected.
+            </p>
+            <p style={para}>
+              It has been the practice to undertake pre-test of census schedules about two years prior to the conduct of the census.
             </p>
           </section>
 
           <section style={card}>
-            <h2 style={sectionHeading}>{isHi ? 'जनगणना सारणी श्रृंखला' : 'Census Table Series'}</h2>
-            <p style={{ ...para, marginBottom: '20px' }}>
-              {isHi 
-                ? 'जनगणना डेटा को निम्नलिखित प्रमुख श्रेणियों/श्रृंखलाओं में व्यवस्थित किया जाता है:' 
-                : 'Census data products are categorized into the following major statistical table series:'}
+            <h2 style={sectionHeading}>{isHi ? 'डिजिटल जनगणना' : 'Digital Census'}</h2>
+            <p style={para}>
+              In the history of Indian Census, for the first time, the Census data will be collected digitally i.e. on Mobile App in the ensuing census. The Mobile app for Census purpose has been devised to be very simple, convenient and user friendly to ensure its maximum acceptability by all the Enumerators and Supervisors. With the help of mobile app, all the data will be instantaneously ready for processing, without any need of extra Logistics for schedules and ICR processing. Also, self-enumeration facility will be provided for the first time in the forthcoming Census. The Population Census of India is transforming into ‘Digital Census’. Adopting a scientific approach, the CMMS portal has been developed by ORGI for smooth conduct and effective management and monitoring of forthcoming Census exercise.
             </p>
-            
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '15px' }}>
-              {series.map(s => (
-                <div key={s.code} style={{
-                  padding: '16px 20px',
-                  borderRadius: '10px',
-                  border: '1px solid #e2e8f0',
-                  backgroundColor: '#f8fafc',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '15px'
-                }}>
-                  <div style={{
-                    backgroundColor: 'var(--primary-color)',
-                    color: '#fff',
-                    padding: '6px 12px',
-                    borderRadius: '6px',
-                    fontWeight: 700,
-                    fontSize: '0.85rem'
-                  }}>
-                    {s.code}
-                  </div>
-                  <div style={{ fontWeight: 600, color: '#334155', fontSize: '0.92rem' }}>
-                    {isHi ? s.hi : s.en}
-                  </div>
-                </div>
-              ))}
-            </div>
+            <p style={para}>
+              For the first time, a separate code directory will be provided for several questions asked in second phase of forthcoming Census. For the questions involving descriptive/non-numeric entries, a separate Code Directory, containing possible responses and codes for each such questions, has been prepared for use by the enumerators. The Code Directory will have codes in respect of Relationship to head, Mother Tongue and Other languages known, Occupation, Nature of industry, trade or service, Birth place/Place of last residence and Scheduled Caste (SC)/Scheduled Tribe (ST) etc.
+            </p>
           </section>
 
         </div>
