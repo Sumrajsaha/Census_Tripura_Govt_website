@@ -68,7 +68,7 @@ export default function RootLayout({
             position: 'sticky',
             top: 0,
             zIndex: 1000,
-            boxShadow: '0 4px 20px rgba(0,0,0,0.3), 0 1px 0 rgba(212,175,55,0.35)'
+            boxShadow: '0 4px 20px rgba(0,0,0,0.3), 0 1px 0 rgba(232,122,0,0.3)'
           }}>
             {/* Main Branding Area - CENTERED */}
             <div className="container brand-header">
@@ -93,7 +93,7 @@ export default function RootLayout({
             </div>
 
             {/* Dedicated Full-Width Navigation Row */}
-            <div style={{ background: 'var(--nav-bg)', borderTop: '1px solid var(--secondary-color)', borderBottom: '3px solid var(--secondary-color)', overflow: 'visible', position: 'relative', zIndex: 999 }}>
+            <div style={{ background: 'linear-gradient(90deg, rgba(0,0,0,0.3), rgba(0,0,0,0.15), rgba(0,0,0,0.3))', borderTop: '1px solid var(--secondary-color)', borderBottom: '3px solid var(--secondary-color)', overflow: 'visible', position: 'relative', zIndex: 999 }}>
               <div className="container" style={{ display: 'flex', justifyContent: 'center', overflow: 'visible', position: 'relative' }}>
                 <Suspense fallback={<div style={{ padding: '10px' }}>Loading Navigation...</div>}>
                   <NavigationLinks />
