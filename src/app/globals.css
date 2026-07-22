@@ -633,3 +633,35 @@ a {
     display: none !important;
   }
 }
+
+/* ══════════════════════════════════════════
+   ACCESSIBILITY & GIGW COMPLIANCE
+   ══════════════════════════════════════════ */
+
+/* Focus states for keyboard navigation */
+:focus-visible {
+  outline: 3px solid var(--secondary-color) !important;
+  outline-offset: 2px !important;
+  box-shadow: 0 0 0 4px rgba(232, 122, 0, 0.4) !important;
+  border-radius: 2px;
+}
+
+/* Skip to Main Content Link */
+.skip-to-main-content-link {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  background: var(--secondary-color);
+  color: white;
+  padding: 12px 24px;
+  z-index: 9999;
+  font-weight: bold;
+  transition: top 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.skip-to-main-content-link:focus {
+  top: 0;
+  outline: none; /* Relies on custom outline above if needed, or specific here */
+  outline: 4px solid var(--primary-color);
+}

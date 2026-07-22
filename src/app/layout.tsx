@@ -6,6 +6,7 @@ import LanguageProviderWrapper from '@/components/LanguageProviderWrapper';
 import LanguageSelector from '@/components/LanguageSelector';
 import TranslatedText from '@/components/TranslatedText';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Suspense } from 'react';
 
 export const metadata = {
@@ -29,6 +30,9 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LanguageProviderWrapper>
+          <a href="#main-content" className="skip-to-main-content-link">
+            Skip to Main Content
+          </a>
           {/* Top Accessibility Bar */}
           <div style={{ background: 'linear-gradient(90deg, var(--footer-bg) 0%, var(--primary-color) 100%)', color: 'var(--footer-text)', padding: '7px 0', fontSize: '0.78rem', fontWeight: 600, borderBottom: '1px solid var(--secondary-color)' }}>
             <div className="container top-bar-container">
@@ -98,6 +102,7 @@ export default function RootLayout({
             </div>
           </header>
 
+          <Breadcrumb />
 
           <main id="main-content" style={{ minHeight: '80vh' }}>
             {children}
