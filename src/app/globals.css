@@ -2,36 +2,39 @@
 
 :root {
   /* =====================================================
-     Royal Navy Blue & Indian Saffron Government Theme
+     Royal Navy Blue & Government Gold Theme (GIGW)
      ===================================================== */
 
-  /* Primary: Royal Navy Blue - Trust, Authority, Security */
-  --primary-color: #0F3B80;
-  --primary-light: #1A54AD;
-  --primary-subtle: #2B73DD;
+  /* Primary: Royal Navy Blue - Header, Headings */
+  --primary-color: #0B3C6F;
+  --primary-light: #0056B3;
+  --primary-subtle: #1A6FD4;
   --primary-xlight: #E8F0FE; /* tint for hover bg */
 
-  /* Accent: Indian Saffron / Warm Orange - Vibrant, highlights */
-  --secondary-color: #E87A00;
-  --secondary-dark: #B86000;
-  --secondary-light: #FF9933;
-  --secondary-xlight: #FFF0E0;
+  /* Nav bar color */
+  --nav-bg: #123F73;
+
+  /* Accent: Government Gold - Hover, Accent Lines */
+  --secondary-color: #D4AF37;
+  --secondary-dark: #B8960C;
+  --secondary-light: #F59E0B;
+  --secondary-xlight: #FEF9E7;
 
   /* Teal for secondary accents/success states */
   --teal: #138808; /* India Green */
 
   /* Backgrounds */
-  --bg-light: #F8F9FA;       /* crisp off-white */
-  --bg-section: #F0F4F8;       /* soft blue-gray tint */
+  --bg-light: #F8FAFC;
+  --bg-section: #EEF2F7;
   --bg-card: #FFFFFF;
 
   /* Text */
-  --text-dark: #1A202C;
-  --text-mid: #4A5568;
-  --text-muted: #718096;
+  --text-dark: #374151;
+  --text-mid: #4B5563;
+  --text-muted: #6B7280;
 
   /* Footer */
-  --footer-bg: #061A40;       /* ultra-deep navy */
+  --footer-bg: #071E3D;
   --footer-text: #B4C5E4;
 
   /* Borders */
@@ -44,14 +47,14 @@
   --border-radius-xs: 5px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 4px rgba(15, 59, 128, 0.07);
-  --shadow-md: 0 6px 18px rgba(15, 59, 128, 0.10);
-  --shadow-lg: 0 18px 40px rgba(15, 59, 128, 0.14);
-  --shadow-gold: 0 8px 24px rgba(232, 122, 0, 0.22);
+  --shadow-sm: 0 1px 4px rgba(11, 60, 111, 0.07);
+  --shadow-md: 0 6px 18px rgba(11, 60, 111, 0.10);
+  --shadow-lg: 0 18px 40px rgba(11, 60, 111, 0.14);
+  --shadow-gold: 0 8px 24px rgba(212, 175, 55, 0.30);
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.92);
-  --glass-border: rgba(27, 67, 50, 0.08);
+  --glass-border: rgba(11, 60, 111, 0.08);
 }
 
 /* ── Reset ── */
@@ -166,7 +169,7 @@ a {
   border: none;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 5px 20px rgba(27, 67, 50, 0.35);
+  box-shadow: 0 5px 20px rgba(11, 60, 111, 0.35);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
   overflow: hidden;
@@ -197,7 +200,7 @@ a {
   z-index: 1;
 }
 
-/* Gold pill badge */
+/* Government Gold pill badge */
 .badge-gold {
   display: inline-block;
   background: linear-gradient(135deg, var(--secondary-light), var(--secondary-color));
@@ -642,7 +645,7 @@ a {
 :focus-visible {
   outline: 3px solid var(--secondary-color) !important;
   outline-offset: 2px !important;
-  box-shadow: 0 0 0 4px rgba(232, 122, 0, 0.4) !important;
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.45) !important;
   border-radius: 2px;
 }
 
@@ -651,17 +654,18 @@ a {
   position: absolute;
   top: -100px;
   left: 0;
-  background: var(--secondary-color);
+  background: var(--primary-color);
   color: white;
   padding: 12px 24px;
   z-index: 9999;
   font-weight: bold;
+  border-bottom: 3px solid var(--secondary-color);
   transition: top 0.2s ease-in-out;
   text-decoration: none;
 }
 
 .skip-to-main-content-link:focus {
   top: 0;
-  outline: none; /* Relies on custom outline above if needed, or specific here */
-  outline: 4px solid var(--primary-color);
+  outline: 4px solid var(--secondary-color);
+  outline-offset: 2px;
 }
