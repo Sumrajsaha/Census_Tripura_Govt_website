@@ -53,7 +53,7 @@ export default function CRSPage() {
   ];
 
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '75vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '75vh', paddingBottom: '60px' }}>
       {/* Page Title Banner */}
       <div style={{ backgroundColor: 'var(--primary-color)', padding: '40px 0', borderBottom: '4px solid var(--secondary-color)' }}>
         <div className="container" style={{ padding: '0 24px' }}>

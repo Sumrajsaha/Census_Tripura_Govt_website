@@ -643,7 +643,7 @@ a {
 :focus-visible {
   outline: 3px solid var(--secondary-color) !important;
   outline-offset: 2px !important;
-  box-shadow: 0 0 0 4px rgba(232, 122, 0, 0.4) !important;
+  box-shadow: 0 0 0 4px rgba(255, 153, 51, 0.4) !important;
   border-radius: 2px;
 }
 

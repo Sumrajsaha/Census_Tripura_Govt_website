@@ -183,7 +183,7 @@ const activitiesContainer: React.CSSProperties = {
 }
 
 const activityItem: React.CSSProperties = {
-  backgroundColor: '#f8fafc',
+  backgroundColor: '#FFFFFF',
   padding: '16px 20px',
   borderRadius: '8px',
   borderLeft: '4px solid var(--primary-color)'

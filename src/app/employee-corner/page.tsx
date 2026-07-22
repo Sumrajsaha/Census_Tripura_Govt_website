@@ -125,7 +125,7 @@ const portalLinks = [
 
 export default function EmployeePage() {
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '80vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '80vh', paddingBottom: '60px' }}>
 
       {/* ── Hero Header ── */}
       <div style={{

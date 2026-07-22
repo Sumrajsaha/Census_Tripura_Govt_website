@@ -50,7 +50,7 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
       </section>
 
       {/* ── MAIN CONTENT GRID: Mascots + Latest Updates + Cards ── */}
-      <section style={{ backgroundColor: '#f8fafc', padding: '50px 0' }}>
+      <section style={{ backgroundColor: '#FFFFFF', padding: '50px 0' }}>
         <div className="container" style={{ padding: '0 24px' }}>
 
           {/* Top row: Mascot Left | Latest Updates | Mascot Right */}

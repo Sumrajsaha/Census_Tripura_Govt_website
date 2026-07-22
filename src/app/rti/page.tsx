@@ -1,6 +1,6 @@
 export default function RTIPage() {
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '70vh', padding: '60px 0' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '70vh', padding: '60px 0' }}>
       <div className="container" style={{ padding: '0 24px', maxWidth: '900px', margin: '0 auto' }}>
 
         {/* Page Title Banner */}
@@ -31,7 +31,7 @@ export default function RTIPage() {
           <div style={{
             padding: '20px 40px',
             borderBottom: '1px solid #e2e8f0',
-            backgroundColor: '#f8fafc',
+            backgroundColor: '#FFFFFF',
           }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
               <div style={{

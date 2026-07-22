@@ -71,7 +71,7 @@ export default function HLOPage() {
 
         <section style={card}>
           <h2 style={sectionHeading}>Houselisting &amp; Housing Census Schedule</h2>
-          <div style={{ textAlign: 'center', marginTop: '20px', padding: '10px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#f8fafc' }}>
+          <div style={{ textAlign: 'center', marginTop: '20px', padding: '10px', border: '1px solid #e2e8f0', borderRadius: '8px', backgroundColor: '#FFFFFF' }}>
             <img 
               src="/houselisting(About census).png" 
               alt="Houselisting and Housing Census Schedule-2021" 

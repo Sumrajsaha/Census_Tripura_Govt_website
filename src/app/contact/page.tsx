@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function Contact() {
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '80vh', padding: '60px 0' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '80vh', padding: '60px 0' }}>
       <div className="container" style={{ padding: '0 24px' }}>
         
         {/* Header Section */}

@@ -8,7 +8,7 @@ export default function WhoIsWhoPage() {
   const isHi = language === 'hi';
 
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '85vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '85vh', paddingBottom: '60px' }}>
       {/* Page Title Banner */}
       <div style={{ backgroundColor: 'var(--primary-color)', padding: '40px 0', borderBottom: '4px solid var(--secondary-color)' }}>
         <div className="container" style={{ padding: '0 24px' }}>
@@ -41,8 +41,8 @@ export default function WhoIsWhoPage() {
             overflow: 'hidden'
           }}>
             <Image 
-              src="/office chart.jpeg" 
-              alt="Office Organizational Chart" 
+              src="/Who is who.jpeg" 
+              alt="Who is Who - Key Administration Hierarchy Chart" 
               layout="fill"
               objectFit="contain"
             />

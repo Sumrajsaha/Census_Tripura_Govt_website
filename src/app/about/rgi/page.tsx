@@ -7,7 +7,7 @@ export default function RGIProfilePage() {
   const isHi = language === 'hi';
 
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '85vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '85vh', paddingBottom: '60px' }}>
       {/* Page Title Banner */}
       <div style={{ backgroundColor: 'var(--primary-color)', padding: '40px 0', borderBottom: '4px solid var(--secondary-color)' }}>
         <div className="container" style={{ padding: '0 24px' }}>
@@ -51,7 +51,7 @@ export default function RGIProfilePage() {
               borderRadius: '12px',
               textAlign: 'center',
               width: '100%',
-              background: '#f8fafc',
+              background: '#FFFFFF',
               boxShadow: '0 4px 15px rgba(0,0,0,0.04)',
               border: '1px solid #e2e8f0'
             }}>

@@ -5,7 +5,7 @@ export const metadata = {
 
 export default function OrgChartPage() {
   return (
-    <div style={{ backgroundColor: '#f8fafc', minHeight: '70vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#FFFFFF', minHeight: '70vh', paddingBottom: '60px' }}>
 
       {/* Page Title Banner */}
       <div style={{ backgroundColor: 'var(--primary-color)', padding: '40px 0', borderBottom: '4px solid var(--secondary-color)' }}>
