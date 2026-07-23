@@ -147,7 +147,6 @@ export default function NavigationLinks() {
         { name: 'History of Census in India', path: '/information/history' },
         { name: 'House Listing Operations', path: '/information/hlo' },
         { name: 'Population Enumeration', path: '/information/pe' },
-        { name: 'Census Hierarchy in the State', path: '/information/hierarchy' },
       ],
     },
     { name: 'Circulars', path: '/circulars' },

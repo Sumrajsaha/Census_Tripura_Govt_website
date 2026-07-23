@@ -54,7 +54,6 @@ export const translations: Record<Language, Record<string, string>> = {
     "History of Census in India": "History of Census in India",
     "House Listing Operations": "House Listing Operations",
     "Population Enumeration": "Population Enumeration",
-    "Census Hierarchy in the State": "Census Hierarchy in the State",
     "Legal Framework": "Legal Framework",
     "Role of the Directorate": "Role of the Directorate",
 
@@ -171,7 +170,6 @@ export const translations: Record<Language, Record<string, string>> = {
     "History of Census in India": "भारत में जनगणना का इतिहास",
     "House Listing Operations": "जनगणना संचालन",
     "Population Enumeration": "जनसंख्या गणना",
-    "Census Hierarchy in the State": "राज्य में जनगणना पदानुक्रम",
     "Legal Framework": "कानूनी ढांचा",
     "Role of the Directorate": "निदेशालय की भूमिका",
 
