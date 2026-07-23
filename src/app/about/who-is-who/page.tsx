@@ -6,9 +6,9 @@ const officers = [
   { name: 'Ratan Biswas', designation: 'Director' },
   { name: 'Prosenjit Nath Choudhury', designation: 'Deputy Registrar General' },
   { name: 'Sukla Kanta Sarkar', designation: 'Deputy Director' },
-  { name: 'Luna Tamuly', designation: 'Assistant Director' },
-  { name: 'Sublit Deb Ray', designation: 'Assistant Director' },
-  { name: 'Arun Pratap Mishra', designation: 'Senior Geographer' },
+  { name: 'Luna Tamuly', designation: 'Assistant Director(T)' },
+  { name: 'Subijit Deb Ray', designation: 'Assistant Director(T)' },
+  { name: 'Arun Pratap Mishra', designation: 'Assistant Research Officer' },
   { name: 'Swapan Sarkar', designation: 'Office Superintendent' },
   { name: 'Bidyut Das', designation: 'Statistical Investigator-I' },
   { name: 'Madhumita Choudhuri', designation: 'Statistical Investigator-I' },
@@ -34,16 +34,16 @@ const officers = [
 ];
 
 const designationColors: Record<string, { bg: string; color: string; dot: string }> = {
-  'Director':                    { bg: '#003366', color: '#fff',    dot: '#001a33' },
-  'Deputy Registrar General':    { bg: '#006b8f', color: '#fff',    dot: '#004d66' },
-  'Deputy Director':             { bg: '#008080', color: '#fff',    dot: '#006060' },
-  'Assistant Director':          { bg: '#2e7d32', color: '#fff',    dot: '#1b5e20' },
-  'Senior Geographer':           { bg: '#f9a825', color: '#4a3000', dot: '#e65100' },
-  'Office Superintendent':       { bg: '#f57f17', color: '#fff',    dot: '#bf360c' },
-  'Statistical Investigator-I':  { bg: '#1565c0', color: '#fff',    dot: '#0d47a1' },
-  'Statistical Investigator-II': { bg: '#1976d2', color: '#fff',    dot: '#1565c0' },
-  'Multi Tasking Staff':         { bg: '#6a1b9a', color: '#fff',    dot: '#4a148c' },
-  'Canteen Attendant':           { bg: '#37474f', color: '#fff',    dot: '#263238' },
+  'Director': { bg: '#003366', color: '#fff', dot: '#001a33' },
+  'Deputy Registrar General': { bg: '#006b8f', color: '#fff', dot: '#004d66' },
+  'Deputy Director': { bg: '#008080', color: '#fff', dot: '#006060' },
+  'Assistant Director': { bg: '#2e7d32', color: '#fff', dot: '#1b5e20' },
+  'Senior Geographer': { bg: '#f9a825', color: '#4a3000', dot: '#e65100' },
+  'Office Superintendent': { bg: '#f57f17', color: '#fff', dot: '#bf360c' },
+  'Statistical Investigator-I': { bg: '#1565c0', color: '#fff', dot: '#0d47a1' },
+  'Statistical Investigator-II': { bg: '#1976d2', color: '#fff', dot: '#1565c0' },
+  'Multi Tasking Staff': { bg: '#6a1b9a', color: '#fff', dot: '#4a148c' },
+  'Canteen Attendant': { bg: '#37474f', color: '#fff', dot: '#263238' },
 };
 
 export default function WhoIsWhoPage() {
