@@ -13,6 +13,18 @@ export default function Breadcrumb() {
 
   const pathSegments = pathname.split('/').filter((segment) => segment);
 
+  // Map URL segments to human-friendly breadcrumb labels
+  const segmentLabelMap: Record<string, { en: string; hi: string }> = {
+    'information': { en: 'About Census', hi: 'जनगणना के बारे में' },
+    'about':       { en: 'About',        hi: 'के बारे में' },
+  };
+
+  const getSegmentLabel = (segment: string) => {
+    const mapped = segmentLabelMap[segment.toLowerCase()];
+    if (mapped) return language === 'hi' ? mapped.hi : mapped.en;
+    return segment.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+  };
+
   return (
     <div style={{ backgroundColor: 'var(--bg-light)', padding: '10px 0', borderBottom: '1px solid var(--border-light)' }}>
       <div className="container">
@@ -26,7 +38,7 @@ export default function Breadcrumb() {
             {pathSegments.map((segment, index) => {
               const href = `/${pathSegments.slice(0, index + 1).join('/')}`;
               const isLast = index === pathSegments.length - 1;
-              const formattedSegment = segment.replace(/-/g, ' ').replace(/\b\w/g, (char) => char.toUpperCase());
+              const formattedSegment = getSegmentLabel(segment);
 
               return (
                 <li key={href} style={{ display: 'flex', alignItems: 'center' }}>
