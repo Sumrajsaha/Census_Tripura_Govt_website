@@ -12,7 +12,7 @@ export default function OrganizationPage() {
     "Deputy Director": { en: "Deputy Director", hi: "उप निदेशक" },
     "Assistant Director (T)": { en: "Assistant Director (Technical)", hi: "सहायक निदेशक (तकनीकी)" },
     "Statistical Investigator Grade-I": { en: "Statistical Investigator Grade-I", hi: "सांख्यिकीय अन्वेषक ग्रेड-I" },
-    "Senior Geographer": { en: "Senior Geographer", hi: "वरिष्ठ भूगोलवेत्ता" },
+    "Assistant Research Officer": { en: "Assistant Research Officer", hi: "सहायक अनुसंधान अधिकारी" },
     "Office Superintendent": { en: "Office Superintendent", hi: "कार्यालय अधीक्षक" },
     "Statistical Investigator Grade-II": { en: "Statistical Investigator Grade-II", hi: "सांख्यिकीय अन्वेषक ग्रेड-II" },
     "Multi Tasking Staff": { en: "Multi Tasking Staff", hi: "मल्टी टास्किंग स्टाफ" },
@@ -72,8 +72,8 @@ export default function OrganizationPage() {
               {isHi ? 'अधिकारियों और कर्मचारियों की सूची' : 'List of Officers and Staff'}
             </h2>
             <p style={{ color: '#64748b', fontSize: '1rem', marginTop: '10px' }}>
-              {isHi 
-                ? 'जनगणना कार्य निदेशालय, त्रिपुरा के समस्त अधिकारियों एवं कर्मचारियों की संवर्ग-वार सूची।' 
+              {isHi
+                ? 'जनगणना कार्य निदेशालय, त्रिपुरा के समस्त अधिकारियों एवं कर्मचारियों की संवर्ग-वार सूची।'
                 : 'Cadre-wise roster of all officers and employees at the Directorate of Census Operations, Tripura.'}
             </p>
             <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '15px auto 0' }}></div>

@@ -19,69 +19,69 @@ export default function DirectoryPage() {
       designationEn: 'Deputy Registrar General',
       designationHi: 'उप रजिस्ट्रार जनरल',
       landline: '0381-2336442',
-      email: 'pnchoudhary.rgi@nic.in'
+      email: 'pnchoudhary.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Sukla Kanta Sarkar',
       designationEn: 'Deputy Director',
       designationHi: 'उप निदेशक',
       landline: '0381-2336442',
-      email: 'suklakantasarkar.rgi@nic.in '
+      email: 'suklakantasarkar.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Subijit Deb Ray',
       designationEn: 'Assistant Director (Technical)',
       designationHi: 'सहायक निदेशक (तकनीकी)',
       landline: '0381-2336442',
-      email: 'subijitdebroy.rgi@nic.in'
+      email: 'subijitdebroy.rgi@censusindia.gov.in'
     },
     {
       name: 'Smt. Luna Tamuly',
       designationEn: 'Assistant Director (Technical)',
       designationHi: 'सहायक निदेशक (तकनीकी)',
       landline: '0381-2336442',
-      email: 'lunatamuly.rgi@nic.in'
+      email: 'lunatamuly.rgi@censusindia.gov.in'
     },
     {
       name: 'Smt. Uma Das',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: 'umadas.rgi@nic.in '
+      email: 'umadas.rgi@censusindia.gov.in '
     }, {
       name: 'Shri Bidyut Dasgupta',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: 'bidyutdas.rgi@nic.in'
+      email: 'bidyutdas.rgi@censusindia.gov.in'
     },
     {
       name: 'Smt. Madhumita Choudhuri',
       designationEn: 'Statistical Investigator Grade-I',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -I',
       landline: '0381-2336442',
-      email: 'mchoudhury.rgi@nic.in'
+      email: 'mchoudhury.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Arun Pratap Mishra',
-      designationEn: 'Assistant Registration Officer',
-      designationHi: 'सहायक पंजीकरण अधिकारी',
+      designationEn: 'Assistant Research Officer',
+      designationHi: 'सहायक अनुसंधान अधिकारी',
       landline: '0381-2336442',
-      email: 'apmishra88.rgi@nic.in'
+      email: 'apmishra88.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Swapan Sarkar',
       designationEn: 'Office Superintendent',
       designationHi: 'कार्यालय अधीक्षक',
       landline: '0381-2336442',
-      email: 'swapansarkar.rgi@nic.in'
+      email: 'swapansarkar.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Monojit Kumar Paul',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: 'monojit.rgi@nic.in'
+      email: 'monojit.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Ajay Shukla',
@@ -109,7 +109,7 @@ export default function DirectoryPage() {
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
-      email: 'hrishi.rgi@nic.in'
+      email: 'hrishi.rgi@censusindia.gov.in'
     },
     {
       name: 'Shri Rajeshwar Singha',
@@ -150,7 +150,7 @@ export default function DirectoryPage() {
       name: 'General Help Desk / Accounts / Estab.',
       designationEn: 'Office Administration',
       designationHi: 'कार्यालय प्रशासन',
-      landline: '0381-2323445',
+      landline: '0381-2336442',
       email: 'dco-tripura@nic.in'
     }
   ];
