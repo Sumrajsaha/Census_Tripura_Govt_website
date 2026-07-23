@@ -36,14 +36,14 @@ const officers = [
 
 const designationColors: Record<string, { bg: string; color: string; dot: string }> = {
   'Director': { bg: '#003366', color: '#fff', dot: '#001a33' },
-  'Deputy Registrar General': { bg: '#37474f', color: '#fff', dot: '#004d66' },
-  'Deputy Director': { bg: '#37474f', color: '#fff', dot: '#006060' },
-  'Assistant Director(T)': { bg: '#37474f', color: '#fff', dot: '#1b5e20' },
-  'Assistant Research Officer': { bg: '#37474f', color: '#4a3000', dot: '#e65100' },
-  'Office Superintendent': { bg: '#37474f', color: '#fff', dot: '#bf360c' },
-  'Statistical Investigator-I': { bg: '#37474f', color: '#fff', dot: '#0d47a1' },
-  'Statistical Investigator-II': { bg: '#37474f', color: '#fff', dot: '#1565c0' },
-  'Multi Tasking Staff': { bg: '#37474f', color: '#fff', dot: '#4a148c' },
+  'Deputy Registrar General': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Deputy Director': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Assistant Director(T)': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Assistant Research Officer': { bg: '#37474f', color: '#4a3000', dot: '#263238' },
+  'Office Superintendent': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Statistical Investigator-I': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Statistical Investigator-II': { bg: '#37474f', color: '#fff', dot: '#263238' },
+  'Multi Tasking Staff': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Canteen Attendant': { bg: '#37474f', color: '#fff', dot: '#263238' },
 };
 
