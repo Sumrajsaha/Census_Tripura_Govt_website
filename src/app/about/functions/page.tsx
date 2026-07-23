@@ -47,7 +47,7 @@ export default function DCOFunctionsPage() {
       titleHi: 'राजभाषा कार्यान्वयन',
       descEn: 'Promotes the progressive use of Hindi in administrative files, notifications, publications, and daily office correspondence in compliance with the Official Language Act.',
       descHi: 'राजभाषा अधिनियम के अनुपालन में प्रशासनिक फाइलों, अधिसूचनाओं, प्रकाशनों और दैनिक कार्यालयीन पत्राचार में हिंदी के प्रगतिशील प्रयोग को बढ़ावा देना।',
-      icon: '🇮🇳'
+      icon: '🖋️'
     }
   ];
 
