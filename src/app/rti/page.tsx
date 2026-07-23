@@ -52,10 +52,10 @@ export default function RTIPage() {
                     All subject matters pertaining to DCO, Tripura
                   </th>
                   <th style={{ padding: '14px 16px', fontWeight: 700, color: '#1e293b', width: '35%' }}>
-                    Name of Nodal Officer/ CPIO (Sh/ Smt/ Ms/ Mr)
+                    Name of FAA (Sh/ Smt/ Ms/ Mr)
                   </th>
                   <th style={{ padding: '14px 16px', fontWeight: 700, color: '#1e293b', width: '35%' }}>
-                    Name of FAA (Sh/ Smt/ Ms/ Mr)
+                    Name of Nodal Officer/ CPIO (Sh/ Smt/ Ms/ Mr)
                   </th>
                 </tr>
               </thead>
