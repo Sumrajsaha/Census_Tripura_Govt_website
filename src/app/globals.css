@@ -2,57 +2,66 @@
 
 :root {
   /* =====================================================
-     Official Indian Government Color Palette
-     Navy Blue #0A3D62 | Saffron #FF9933 | Green #138808
+     Indian Tricolour Inspired Theme — OPTION 2
+     Saffron #FF9933 | White | India Green #138808
+     Header Navy: #003f7f | Nav strip: #002a5c
      ===================================================== */
 
-  /* Primary: Deep Navy Blue - Trust, Authority, Security */
-  --primary-color: #0A3D62;
-  --primary-light: #1A5C96;
-  --primary-subtle: #2E7BC4;
-  --primary-xlight: #E6F0F8; /* tint for hover bg */
+  /* Primary: Flat Deep Navy — the authoritative government blue */
+  --primary-color: #003f7f;
+  --primary-light: #1a5ba6;
+  --primary-subtle: #2d78c8;
+  --primary-xlight: #e6f0fa; /* tint for hover bg */
 
-  /* Accent: Indian Saffron - National flag colour, vibrant highlights */
+  /* Header top bar (slightly darker than main header) */
+  --header-topbar: #002a5c;
+  /* Main header / nav strip */
+  --header-bg: #003f7f;
+  /* Nav strip — subtle shade for the dedicated nav row */
+  --nav-strip-bg: #003270;
+
+  /* Accent: Indian Saffron — national flag colour, primary accent */
   --secondary-color: #FF9933;
-  --secondary-dark: #CC7722;
-  --secondary-light: #FFAD5C;
-  --secondary-xlight: #FFF4E6;
+  --secondary-dark: #e07820;
+  --secondary-light: #ffb85c;
+  --secondary-xlight: #fff4e6;
 
-  /* India Green for success states & accents */
+  /* India Green — for success states, subtle accents */
   --teal: #138808;
+  --teal-light: #1aa60a;
 
   /* Backgrounds */
-  --bg-light: #FFFFFF;       /* pure white */
-  --bg-section: #F0F5FA;     /* soft blue-white tint */
+  --bg-light: #FFFFFF;         /* pure white content areas */
+  --bg-section: #f4f7fb;       /* very light blue-grey tint */
   --bg-card: #FFFFFF;
 
   /* Text */
   --text-dark: #0D1B2A;
-  --text-mid: #3A4A5C;
-  --text-muted: #6B7C93;
+  --text-mid: #2e3f55;
+  --text-muted: #5a6e84;
 
-  /* Footer */
-  --footer-bg: #061528;       /* ultra-deep navy derived from #0A3D62 */
-  --footer-text: #A8C4E0;
+  /* Footer — deep authoritative navy */
+  --footer-bg: #001e45;
+  --footer-text: #a8c4e0;
 
   /* Borders */
-  --border-light: #D8E6F3;
-  --border-mid: #B0CAE0;
+  --border-light: #d0e2f4;
+  --border-mid: #aac4de;
 
   /* Radii */
-  --border-radius-lg: 14px;
+  --border-radius-lg: 12px;
   --border-radius-sm: 8px;
-  --border-radius-xs: 5px;
+  --border-radius-xs: 4px;
 
-  /* Shadows — tuned to new navy hue */
-  --shadow-sm: 0 1px 4px rgba(10, 61, 98, 0.08);
-  --shadow-md: 0 6px 18px rgba(10, 61, 98, 0.12);
-  --shadow-lg: 0 18px 40px rgba(10, 61, 98, 0.16);
-  --shadow-gold: 0 8px 24px rgba(255, 153, 51, 0.28);
+  /* Shadows — tuned to tricolour navy */
+  --shadow-sm: 0 1px 4px rgba(0, 63, 127, 0.08);
+  --shadow-md: 0 6px 18px rgba(0, 63, 127, 0.12);
+  --shadow-lg: 0 18px 40px rgba(0, 63, 127, 0.16);
+  --shadow-gold: 0 8px 24px rgba(255, 153, 51, 0.30);
 
   /* Glassmorphism */
-  --glass-bg: rgba(255, 255, 255, 0.94);
-  --glass-border: rgba(10, 61, 98, 0.08);
+  --glass-bg: rgba(255, 255, 255, 0.95);
+  --glass-border: rgba(0, 63, 127, 0.08);
 }
 
 /* ── Reset ── */
@@ -89,7 +98,7 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f5f1;
+  background: #eef4fb;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -345,6 +354,7 @@ a {
   z-index: 1000;
   border: 1px solid var(--border-light);
   border-top: 3px solid var(--secondary-color);
+  border-radius: 0 0 var(--border-radius-sm) var(--border-radius-sm);
 }
 
 .nav-item:hover .nav-dropdown {
@@ -523,7 +533,7 @@ a {
     flex-direction: column;
     align-items: flex-start;
     padding: 15px 20px 80px 20px;
-    background-color: var(--primary-color);
+    background-color: #003270;
     position: absolute;
     top: 100%;
     left: 0;
@@ -548,10 +558,7 @@ a {
     box-shadow: none;
     border: none;
     border-left: 2px solid var(--secondary-color);
-    border-radius: 0;
-    margin-top: 5px;
-    margin-left: 10px;
-    background-color: transparent;
+    background-color: #002a5c;
   }
 
   .dropdown-menu-link {

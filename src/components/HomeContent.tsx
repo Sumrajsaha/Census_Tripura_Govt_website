@@ -79,19 +79,19 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
             {/* CENTRE: Latest Updates Vertical Ticker */}
             <div style={{
               backgroundColor: '#fff',
-              borderRadius: '14px',
-              boxShadow: '0 8px 30px rgba(27,67,50,0.10)',
-              border: '1px solid #E8EDE8',
+              borderRadius: '12px',
+              boxShadow: '0 6px 24px rgba(0, 63, 127, 0.10)',
+              border: '1px solid var(--border-light)',
               overflow: 'hidden',
             }}>
               {/* Header bar */}
               <div style={{
-                background: 'linear-gradient(135deg, var(--primary-color), var(--primary-light))',
+                background: '#003f7f',
                 padding: '14px 20px',
                 display: 'flex',
                 alignItems: 'center',
                 gap: '10px',
-                borderBottom: '2px solid var(--secondary-color)'
+                borderBottom: '3px solid var(--secondary-color)'
               }}>
                 <span style={{
                   width: '8px', height: '8px', borderRadius: '50%',
