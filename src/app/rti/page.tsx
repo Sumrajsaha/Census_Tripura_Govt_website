@@ -87,16 +87,67 @@ export default function RTIPage() {
           </div>
         </div>
 
-        {/* Placeholder for future RTI disclosures */}
+        {/* Work Allocation Table Section */}
         <div style={{
           marginTop: '30px',
           backgroundColor: '#fff',
           borderRadius: '12px',
           border: '1px solid #e2e8f0',
-          padding: '30px 40px',
-          boxShadow: '0 4px 20px rgba(0,0,0,0.04)',
+          padding: '35px 40px',
+          boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
         }}>
+          <h3 style={{
+            fontSize: '1.25rem',
+            fontWeight: 700,
+            color: 'var(--primary-color)',
+            textAlign: 'center',
+            marginBottom: '24px',
+            lineHeight: 1.4
+          }}>
+            Work allocation of Central Public Information Officer &amp; First Appellate Authority
+          </h3>
 
+          <div style={{ overflowX: 'auto' }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              fontSize: '0.95rem',
+              textAlign: 'left'
+            }}>
+              <thead>
+                <tr style={{ backgroundColor: '#f8fafc', borderBottom: '2px solid #cbd5e1' }}>
+                  <th style={{ padding: '14px 16px', fontWeight: 700, color: '#1e293b', width: '30%' }}>
+                    All subject matters pertaining to DCO, Tripura
+                  </th>
+                  <th style={{ padding: '14px 16px', fontWeight: 700, color: '#1e293b', width: '35%' }}>
+                    Name of Nodal Officer/ CPIO (Sh/ Smt/ Ms/ Mr)
+                  </th>
+                  <th style={{ padding: '14px 16px', fontWeight: 700, color: '#1e293b', width: '35%' }}>
+                    Name of FAA (Sh/ Smt/ Ms/ Mr)
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style={{ borderBottom: '1px solid #e2e8f0' }}>
+                  <td style={{ padding: '16px', color: '#334155', verticalAlign: 'top', fontWeight: 500 }}>
+                    Census
+                  </td>
+                  <td style={{ padding: '16px', color: '#334155', verticalAlign: 'top' }}>
+                    <div style={{ fontWeight: 600, color: '#0f172a' }}>Prosenjit Nath Choudhury</div>
+                    <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                      Email ID: <a href="mailto:pnchoudhury.rgi@nic.in" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>pnchoudhury.rgi@nic.in</a>
+                    </div>
+                  </td>
+                  <td style={{ padding: '16px', color: '#334155', verticalAlign: 'top' }}>
+                    <div style={{ fontWeight: 600, color: '#0f172a' }}>Sukla Kanta Sarkar</div>
+                    <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                      Email ID: <a href="mailto:suklakantasarkar.rgi@nic.in" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>suklakantasarkar.rgi@nic.in</a>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div>
