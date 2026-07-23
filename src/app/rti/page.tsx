@@ -67,11 +67,17 @@ export default function RTIPage() {
                   <td style={{ padding: '16px', color: '#334155', verticalAlign: 'top' }}>
                     <div style={{ fontWeight: 600, color: '#0f172a' }}>Prosenjit Nath Choudhury</div>
                     <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                      Contact No.: <a href="mailto:0381-2336442" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}> 0381-2336442</a>
+                    </div>
+                    <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
                       Email ID: <a href="mailto:pnchoudhury.rgi@nic.in" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>pnchoudhury.rgi@nic.in</a>
                     </div>
                   </td>
                   <td style={{ padding: '16px', color: '#334155', verticalAlign: 'top' }}>
                     <div style={{ fontWeight: 600, color: '#0f172a' }}>Sukla Kanta Sarkar</div>
+                    <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
+                      Contact No.: <a href="mailto:0381-2336442" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}> 0381-2336442</a>
+                    </div>
                     <div style={{ marginTop: '6px', fontSize: '0.9rem', color: '#475569' }}>
                       Email ID: <a href="mailto:suklakantasarkar.rgi@nic.in" style={{ color: 'var(--primary-color)', textDecoration: 'underline' }}>suklakantasarkar.rgi@nic.in</a>
                     </div>

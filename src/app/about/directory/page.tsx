@@ -11,7 +11,7 @@ export default function DirectoryPage() {
       name: 'Shri Ratan Biswas, IAS',
       designationEn: 'Director',
       designationHi: 'निदेशक',
-      landline: '0381-2330134',
+      landline: '0381-2336442',
       email: 'ratan.biswas@gov.in'
     },
     {
