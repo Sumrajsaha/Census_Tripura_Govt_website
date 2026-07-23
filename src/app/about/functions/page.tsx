@@ -29,8 +29,8 @@ export default function DCOFunctionsPage() {
       icon: '📈'
     },
     {
-      titleEn: 'Cartography & Boundary Mapping',
-      titleHi: 'मानचित्रकला एवं सीमा मानचित्रण',
+      titleEn: 'Map Division',
+      titleHi: 'मानचित्र प्रभाग',
       descEn: 'Prepares and updates administrative boundary maps of districts, sub-divisions, revenue villages, and wards to ensure complete and accurate coverage for census operations.',
       descHi: 'जनगणना संचालन के लिए सटीक भौगोलिक कवरेज सुनिश्चित करने हेतु जिलों, उप-मंडलों, राजस्व गांवों और वार्डों के प्रशासनिक सीमा मानचित्रों को तैयार करना और अपडेट करना।',
       icon: '🗺️'
@@ -67,14 +67,14 @@ export default function DCOFunctionsPage() {
 
       <div className="container" style={{ padding: '50px 24px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          
+
           <div style={{ textAlign: 'center', marginBottom: '40px' }}>
             <h2 style={{ fontSize: '2rem', color: 'var(--primary-color)', fontWeight: 800 }}>
               {isHi ? 'मुख्य दायित्व एवं कर्तव्य' : 'Key Responsibilities & Duties'}
             </h2>
             <p style={{ color: '#64748b', fontSize: '1.05rem', marginTop: '10px' }}>
-              {isHi 
-                ? 'निदेशालय भारत सरकार के गृह मंत्रालय के अधीन राज्य में निम्नलिखित कार्यों का संपादन करता है:' 
+              {isHi
+                ? 'निदेशालय भारत सरकार के गृह मंत्रालय के अधीन राज्य में निम्नलिखित कार्यों का संपादन करता है:'
                 : 'Under the Ministry of Home Affairs, Government of India, the Directorate manages the following core functions:'}
             </p>
             <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '15px auto 0' }}></div>
