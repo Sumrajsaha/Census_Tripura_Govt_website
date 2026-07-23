@@ -34,7 +34,7 @@ export default function RootLayout({
             Skip to Main Content
           </a>
           {/* Top Accessibility Bar */}
-          <div style={{ background: '#002a5c', color: 'var(--footer-text)', padding: '7px 0', fontSize: '0.78rem', fontWeight: 600, borderBottom: '2px solid var(--secondary-color)' }}>
+          <div style={{ background: 'var(--header-topbar)', color: 'var(--footer-text)', padding: '7px 0', fontSize: '0.78rem', fontWeight: 600, borderBottom: '1px solid rgba(255,153,51,0.3)' }}>
             <div className="container top-bar-container">
               <div style={{ display: 'flex', gap: '10px', alignItems: 'center', flexWrap: 'wrap', justifyContent: 'center', textAlign: 'center' }}>
                 <TranslatedText text="GOVERNMENT OF INDIA" style={{ color: '#ffffff', fontWeight: 600 }} />
@@ -63,12 +63,12 @@ export default function RootLayout({
 
           {/* Sticky Regal Header */}
           <header style={{
-            background: '#003f7f',
+            background: 'var(--header-bg)',
             color: 'white',
             position: 'sticky',
             top: 0,
             zIndex: 1000,
-            boxShadow: '0 4px 16px rgba(0,0,0,0.28), 0 1px 0 rgba(255,153,51,0.4)'
+            boxShadow: '0 4px 16px rgba(0,0,0,0.18)'
           }}>
             {/* Main Branding Area - CENTERED */}
             <div className="container brand-header">
@@ -79,12 +79,12 @@ export default function RootLayout({
                 <TranslatedText
                   text="Directorate of Census Operations"
                   elementType="h1"
-                  style={{ fontSize: '1.5rem', margin: '0 0 4px', letterSpacing: '0.02em', color: '#fff', textTransform: 'uppercase', fontWeight: 700, lineHeight: 1.2 }}
+                  style={{ fontSize: '1.55rem', margin: '0 0 4px', letterSpacing: '0.03em', color: '#fff', textTransform: 'uppercase', fontWeight: 800, lineHeight: 1.2 }}
                 />
                 <TranslatedText
                   text="TRIPURA | GOVERNMENT OF INDIA"
                   elementType="p"
-                  style={{ margin: 0, fontSize: '0.85rem', color: 'var(--secondary-color)', fontWeight: 700, letterSpacing: '0.15em' }}
+                  style={{ margin: 0, fontSize: '0.88rem', color: 'var(--secondary-color)', fontWeight: 700, letterSpacing: '0.18em' }}
                 />
               </div>
               <div style={{ width: '180px', height: '110px', position: 'relative', flexShrink: 0, display: 'flex', alignItems: 'center' }}>
@@ -92,13 +92,20 @@ export default function RootLayout({
               </div>
             </div>
 
-            {/* Dedicated Full-Width Navigation Row */}
-            <div style={{ background: '#003270', borderTop: '1px solid rgba(255,255,255,0.12)', borderBottom: '3px solid var(--secondary-color)', overflow: 'visible', position: 'relative', zIndex: 999 }}>
+            {/* Dedicated Full-Width Navigation Row — White Background (Option 2) */}
+            <div style={{ background: '#ffffff', borderTop: '1px solid rgba(255,255,255,0.2)', overflow: 'visible', position: 'relative', zIndex: 999 }}>
               <div className="container" style={{ display: 'flex', justifyContent: 'center', overflow: 'visible', position: 'relative' }}>
-                <Suspense fallback={<div style={{ padding: '10px' }}>Loading Navigation...</div>}>
+                <Suspense fallback={<div style={{ padding: '10px', color: '#002147' }}>Loading Navigation...</div>}>
                   <NavigationLinks />
                 </Suspense>
               </div>
+            </div>
+
+            {/* Indian Tricolour Horizontal Bar (Saffron, White, India Green) */}
+            <div style={{ width: '100%', display: 'flex', flexDirection: 'column' }}>
+              <div style={{ height: '2px', backgroundColor: '#FF9933' }}></div>
+              <div style={{ height: '1px', backgroundColor: '#FFFFFF' }}></div>
+              <div style={{ height: '2px', backgroundColor: '#138808' }}></div>
             </div>
           </header>
 

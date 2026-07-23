@@ -54,8 +54,9 @@ export default function ImageSlider() {
             onClick={() => setCurrentIndex(index)}
             style={{
               width: '12px', height: '12px', borderRadius: '50%',
-              backgroundColor: index === currentIndex ? 'white' : 'rgba(255,255,255,0.4)',
-              border: 'none', cursor: 'pointer', transition: 'background-color 0.3s'
+              backgroundColor: index === currentIndex ? '#FF9933' : 'rgba(255,255,255,0.6)',
+              border: index === currentIndex ? '2px solid white' : 'none',
+              cursor: 'pointer', transition: 'all 0.3s ease'
             }}
             aria-label={`Go to slide ${index + 1}`}
           />

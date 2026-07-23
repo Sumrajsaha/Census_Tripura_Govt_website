@@ -86,20 +86,20 @@ export default function HomeContent({ latestNews }: { latestNews: { id: number; 
             }}>
               {/* Header bar */}
               <div style={{
-                background: '#003f7f',
+                background: '#002147',
                 padding: '14px 20px',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '10px',
-                borderBottom: '3px solid var(--secondary-color)'
+                gap: '12px',
+                borderBottom: '3px solid #FF9933'
               }}>
-                <span style={{
-                  width: '8px', height: '8px', borderRadius: '50%',
-                  backgroundColor: '#ef4444', display: 'inline-block',
-                  boxShadow: '0 0 0 3px rgba(239,68,68,0.3)',
-                  animation: 'pulse 1.5s infinite'
-                }}></span>
-                <h3 style={{ color: '#fff', margin: 0, fontSize: '1rem', fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FF9933" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+                  <path d="M12 22a10 10 0 0 0 10-10H12z"/>
+                  <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/>
+                  <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+                </svg>
+                <h3 style={{ color: '#fff', margin: 0, fontSize: '1.05rem', fontWeight: 800, letterSpacing: '0.08em', textTransform: 'uppercase' }}>
                   {t("LATEST UPDATES")}
                 </h3>
               </div>

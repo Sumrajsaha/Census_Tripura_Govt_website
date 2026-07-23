@@ -26,28 +26,37 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
     ? pathname === item.path || (item.path !== '/' && pathname.startsWith(item.path))
     : false;
 
+  const isHome = item.path === '/';
+
   const linkStyle: React.CSSProperties = {
-    fontWeight: 700,
-    fontSize: '0.8rem',
+    fontWeight: 750,
+    fontSize: '0.78rem',
     textDecoration: 'none',
-    color: isActive ? 'var(--secondary-color)' : 'white',
-    padding: '8px 12px',
-    borderRadius: '6px',
-    backgroundColor: isActive ? 'rgba(201,147,53,0.15)' : 'transparent',
-    border: isActive ? '1px solid var(--secondary-color)' : '1px solid transparent',
+    color: isActive ? '#E65100' : '#002147',
+    padding: '9px 12px',
+    borderRadius: '4px',
+    backgroundColor: isActive ? '#FFF4E6' : 'transparent',
+    borderBottom: isActive ? '2px solid #FF9933' : '2px solid transparent',
     transition: 'all 0.2s ease',
-    letterSpacing: '0.04em',
+    letterSpacing: '0.03em',
     textTransform: 'uppercase' as const,
     whiteSpace: 'nowrap' as const,
     display: 'flex',
     alignItems: 'center',
-    gap: '4px',
+    gap: '5px',
     cursor: 'pointer',
   };
 
+  const homeIcon = isHome ? (
+    <svg width="14" height="14" viewBox="0 0 24 24" fill={isActive ? '#E65100' : '#002147'} stroke="none">
+      <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+    </svg>
+  ) : null;
+
   if (!item.children) {
     return (
-      <Link href={item.path} style={linkStyle}>
+      <Link href={item.path} style={linkStyle} className="nav-link-hover">
+        {homeIcon}
         {t(item.name)}
       </Link>
     );
@@ -59,18 +68,20 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
         onClick={() => setOpen(v => !v)}
         style={{
           ...linkStyle,
-          background: open ? 'rgba(201,147,53,0.15)' : (isActive ? 'rgba(201,147,53,0.15)' : 'transparent'),
-          border: open || isActive ? '1px solid var(--secondary-color)' : '1px solid transparent',
-          color: open || isActive ? 'var(--secondary-color)' : 'white',
+          background: open ? '#FFF4E6' : (isActive ? '#FFF4E6' : 'transparent'),
+          borderBottom: open || isActive ? '2px solid #FF9933' : '2px solid transparent',
+          color: open || isActive ? '#E65100' : '#002147',
           outline: 'none',
           fontFamily: 'inherit',
         }}
+        className="nav-link-hover"
         aria-expanded={open}
         aria-haspopup="true"
       >
+        {homeIcon}
         {t(item.name)}
         <svg
-          width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
           strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
           style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}
         >

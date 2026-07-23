@@ -4,64 +4,66 @@
   /* =====================================================
      Indian Tricolour Inspired Theme — OPTION 2
      Saffron #FF9933 | White | India Green #138808
-     Header Navy: #003f7f | Nav strip: #002a5c
+     Header Deep Navy: #002147 | Nav strip: #FFFFFF (White)
      ===================================================== */
 
-  /* Primary: Flat Deep Navy — the authoritative government blue */
-  --primary-color: #003f7f;
-  --primary-light: #1a5ba6;
-  --primary-subtle: #2d78c8;
-  --primary-xlight: #e6f0fa; /* tint for hover bg */
+  /* Primary: Deep Navy Blue — authoritative government navy */
+  --primary-color: #002147;
+  --primary-dark: #00122e;
+  --primary-light: #003366;
+  --primary-subtle: #1a4a85;
+  --primary-xlight: #e8f0fe; /* tint for hover bg */
 
-  /* Header top bar (slightly darker than main header) */
-  --header-topbar: #002a5c;
-  /* Main header / nav strip */
-  --header-bg: #003f7f;
-  /* Nav strip — subtle shade for the dedicated nav row */
-  --nav-strip-bg: #003270;
+  /* Header top bar & main header */
+  --header-topbar: #00122e;
+  --header-bg: #002147;
 
-  /* Accent: Indian Saffron — national flag colour, primary accent */
+  /* Nav strip — White background as per Option 2 */
+  --nav-strip-bg: #ffffff;
+  --nav-text-color: #002147;
+
+  /* Accent: Indian Saffron — national flag color */
   --secondary-color: #FF9933;
-  --secondary-dark: #e07820;
-  --secondary-light: #ffb85c;
-  --secondary-xlight: #fff4e6;
+  --secondary-dark: #E65100;
+  --secondary-light: #FFB85C;
+  --secondary-xlight: #FFF4E6;
 
-  /* India Green — for success states, subtle accents */
+  /* India Green — tricolour green accent */
   --teal: #138808;
-  --teal-light: #1aa60a;
+  --teal-light: #18a30a;
 
   /* Backgrounds */
   --bg-light: #FFFFFF;         /* pure white content areas */
-  --bg-section: #f4f7fb;       /* very light blue-grey tint */
+  --bg-section: #F4F7FB;       /* very light blue-grey tint */
   --bg-card: #FFFFFF;
 
   /* Text */
-  --text-dark: #0D1B2A;
-  --text-mid: #2e3f55;
-  --text-muted: #5a6e84;
+  --text-dark: #002147;
+  --text-mid: #2E3F55;
+  --text-muted: #5A6E84;
 
   /* Footer — deep authoritative navy */
-  --footer-bg: #001e45;
-  --footer-text: #a8c4e0;
+  --footer-bg: #00122e;
+  --footer-text: #A8C4E0;
 
   /* Borders */
-  --border-light: #d0e2f4;
-  --border-mid: #aac4de;
+  --border-light: #D0E2F4;
+  --border-mid: #AAC4DE;
 
   /* Radii */
   --border-radius-lg: 12px;
   --border-radius-sm: 8px;
   --border-radius-xs: 4px;
 
-  /* Shadows — tuned to tricolour navy */
-  --shadow-sm: 0 1px 4px rgba(0, 63, 127, 0.08);
-  --shadow-md: 0 6px 18px rgba(0, 63, 127, 0.12);
-  --shadow-lg: 0 18px 40px rgba(0, 63, 127, 0.16);
-  --shadow-gold: 0 8px 24px rgba(255, 153, 51, 0.30);
+  /* Shadows — tuned to navy & saffron */
+  --shadow-sm: 0 1px 4px rgba(0, 33, 71, 0.08);
+  --shadow-md: 0 6px 18px rgba(0, 33, 71, 0.12);
+  --shadow-lg: 0 18px 40px rgba(0, 33, 71, 0.16);
+  --shadow-gold: 0 8px 24px rgba(255, 153, 51, 0.35);
 
   /* Glassmorphism */
   --glass-bg: rgba(255, 255, 255, 0.95);
-  --glass-border: rgba(0, 63, 127, 0.08);
+  --glass-border: rgba(0, 33, 71, 0.08);
 }
 
 /* ── Reset ── */
@@ -336,6 +338,11 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+}
+
+.nav-link-hover:hover {
+  color: #E65100 !important;
+  background-color: #FFF4E6 !important;
 }
 
 .nav-dropdown {
