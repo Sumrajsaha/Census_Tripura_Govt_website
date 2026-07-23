@@ -342,7 +342,8 @@ a {
 
 .nav-link-hover:hover {
   color: #E65100 !important;
-  background-color: #FFF4E6 !important;
+  background: transparent !important;
+  border-bottom: 2px solid #FF9933 !important;
 }
 
 .nav-dropdown {

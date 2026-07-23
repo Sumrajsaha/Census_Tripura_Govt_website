@@ -33,18 +33,20 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
     fontSize: '0.78rem',
     textDecoration: 'none',
     color: isActive ? '#E65100' : '#002147',
-    padding: '9px 12px',
-    borderRadius: '4px',
-    backgroundColor: isActive ? '#FFF4E6' : 'transparent',
+    padding: '8px 10px',
+    backgroundColor: 'transparent',
+    border: 'none',
     borderBottom: isActive ? '2px solid #FF9933' : '2px solid transparent',
-    transition: 'all 0.2s ease',
+    transition: 'color 0.2s ease, border-color 0.2s ease',
     letterSpacing: '0.03em',
     textTransform: 'uppercase' as const,
     whiteSpace: 'nowrap' as const,
-    display: 'flex',
+    display: 'inline-flex',
     alignItems: 'center',
-    gap: '5px',
+    gap: '4px',
     cursor: 'pointer',
+    boxShadow: 'none',
+    outline: 'none',
   };
 
   const homeIcon = isHome ? (
@@ -63,16 +65,14 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
   }
 
   return (
-    <div ref={ref} style={{ position: 'relative' }}>
+    <div ref={ref} style={{ position: 'relative', display: 'inline-flex', alignItems: 'center' }}>
       <button
         onClick={() => setOpen(v => !v)}
         style={{
           ...linkStyle,
-          background: open ? '#FFF4E6' : (isActive ? '#FFF4E6' : 'transparent'),
+          background: 'transparent',
           borderBottom: open || isActive ? '2px solid #FF9933' : '2px solid transparent',
           color: open || isActive ? '#E65100' : '#002147',
-          outline: 'none',
-          fontFamily: 'inherit',
         }}
         className="nav-link-hover"
         aria-expanded={open}
@@ -81,9 +81,9 @@ function DropdownItem({ item, pathname }: { item: NavItem; pathname: string | nu
         {homeIcon}
         {t(item.name)}
         <svg
-          width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-          strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"
-          style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)' }}
+          width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+          strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+          style={{ transition: 'transform 0.2s', transform: open ? 'rotate(180deg)' : 'rotate(0deg)', marginLeft: '1px' }}
         >
           <polyline points="6 9 12 15 18 9" />
         </svg>
