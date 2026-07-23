@@ -140,7 +140,7 @@ export default function DirectoryPage() {
       email: 'murlidhar.rgi@censusindia.gov.in'
     },
     {
-      name: 'Shri Arupla Harshavardhan',
+      name: 'Shri Arupula Harshavardhan',
       designationEn: 'Statistical Investigator Grade-II',
       designationHi: 'सांख्यिकीय अन्वेषक ग्रेड -II',
       landline: '0381-2336442',
