@@ -100,7 +100,7 @@ export default function DCOFunctionsPage() {
                 <h3 style={{ color: 'var(--primary-color)', fontSize: '1.25rem', fontWeight: 700, margin: 0 }}>
                   {isHi ? fn.titleHi : fn.titleEn}
                 </h3>
-                <p style={{ color: '#475569', fontSize: '0.92rem', lineHeight: '1.6', margin: 0 }}>
+                <p style={{ color: '#475569', fontSize: '0.92rem', lineHeight: '1.6', margin: 0, textAlign: 'justify' }}>
                   {isHi ? fn.descHi : fn.descEn}
                 </p>
               </div>
