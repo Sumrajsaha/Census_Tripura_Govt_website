@@ -39,7 +39,7 @@ const designationColors: Record<string, { bg: string; color: string; dot: string
   'Deputy Registrar General': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Deputy Director': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Assistant Director(T)': { bg: '#37474f', color: '#fff', dot: '#263238' },
-  'Assistant Research Officer': { bg: '#37474f', color: '#4a3000', dot: '#263238' },
+  'Assistant Research Officer': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Office Superintendent': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Statistical Investigator-I': { bg: '#37474f', color: '#fff', dot: '#263238' },
   'Statistical Investigator-II': { bg: '#37474f', color: '#fff', dot: '#263238' },
