@@ -335,22 +335,22 @@ export default function HierarchyPage() {
                   width: '31%',
                   backgroundColor: '#fff2cc',
                   border: '2px solid #ffd966',
-                  borderRadius: '10px',
-                  padding: '12px 10px',
+                  borderRadius: '8px',
+                  padding: '7px 8px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '8px',
+                  gap: '6px',
                   fontWeight: 700,
                   color: '#7f6000',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
                 }}>
-                  <div style={{ backgroundColor: '#b45f06', borderRadius: '50%', width: '26px', height: '26px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff">
+                  <div style={{ backgroundColor: '#b45f06', borderRadius: '50%', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                     </svg>
                   </div>
-                  <span style={{ fontSize: '0.88rem', textAlign: 'center' }}>Senior Geographer</span>
+                  <span style={{ fontSize: '0.78rem', textAlign: 'center' }}>Senior Geographer</span>
                 </div>
 
                 {/* Office Superintendent */}
@@ -358,22 +358,22 @@ export default function HierarchyPage() {
                   width: '31%',
                   backgroundColor: '#fff2cc',
                   border: '2px solid #ffd966',
-                  borderRadius: '10px',
-                  padding: '12px 10px',
+                  borderRadius: '8px',
+                  padding: '7px 8px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  gap: '8px',
+                  gap: '6px',
                   fontWeight: 700,
                   color: '#7f6000',
                   boxShadow: '0 2px 8px rgba(0,0,0,0.05)'
                 }}>
-                  <div style={{ backgroundColor: '#b45f06', borderRadius: '50%', width: '26px', height: '26px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                    <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff">
+                  <div style={{ backgroundColor: '#b45f06', borderRadius: '50%', width: '20px', height: '20px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="#fff">
                       <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
                     </svg>
                   </div>
-                  <span style={{ fontSize: '0.88rem', textAlign: 'center' }}>Office Superintendent</span>
+                  <span style={{ fontSize: '0.78rem', textAlign: 'center' }}>Office Superintendent</span>
                 </div>
 
                 {/* Statistical Investigator-I & lower chain container */}

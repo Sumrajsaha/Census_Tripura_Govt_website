@@ -1,14 +1,57 @@
 "use client";
 
 import { useLanguage } from '@/context/LanguageContext';
-import Image from 'next/image';
+
+const officers = [
+  { name: 'Ratan Biswas', designation: 'Director' },
+  { name: 'Prosenjit Nath Choudhury', designation: 'Deputy Registrar General' },
+  { name: 'Sukla Kanta Sarkar', designation: 'Deputy Director' },
+  { name: 'Luna Tamuly', designation: 'Assistant Director' },
+  { name: 'Sublit Deb Ray', designation: 'Assistant Director' },
+  { name: 'Arun Pratap Mishra', designation: 'Senior Geographer' },
+  { name: 'Swapan Sarkar', designation: 'Office Superintendent' },
+  { name: 'Bidyut Das', designation: 'Statistical Investigator-I' },
+  { name: 'Madhumita Choudhuri', designation: 'Statistical Investigator-I' },
+  { name: 'Uma Das', designation: 'Statistical Investigator-I' },
+  { name: 'Ajay Shukla', designation: 'Statistical Investigator-II' },
+  { name: 'Arupila Harshavardhan', designation: 'Statistical Investigator-II' },
+  { name: 'Hrishi Sogarwal', designation: 'Statistical Investigator-II' },
+  { name: 'Monojit Kumar Paul', designation: 'Statistical Investigator-II' },
+  { name: 'Murlidhar', designation: 'Statistical Investigator-II' },
+  { name: 'Pratap Dey', designation: 'Statistical Investigator-II' },
+  { name: 'Rahul Das', designation: 'Statistical Investigator-II' },
+  { name: 'Rajeshwar Singha', designation: 'Statistical Investigator-II' },
+  { name: 'Subhadeep Raha', designation: 'Statistical Investigator-II' },
+  { name: 'Yash Chaurasiya', designation: 'Statistical Investigator-II' },
+  { name: 'Chinmoy Nath', designation: 'Multi Tasking Staff' },
+  { name: 'Dulal Rudra', designation: 'Multi Tasking Staff' },
+  { name: 'Mahesh Dhanuk', designation: 'Multi Tasking Staff' },
+  { name: 'Sandhya Rani Deb Barma', designation: 'Multi Tasking Staff' },
+  { name: 'Sourav Kumar', designation: 'Multi Tasking Staff' },
+  { name: 'Amalendu Das', designation: 'Canteen Attendant' },
+  { name: 'Bijoy Kumar Ghosh', designation: 'Canteen Attendant' },
+  { name: 'Trisha Nath', designation: 'Canteen Attendant' },
+];
+
+const designationColors: Record<string, { bg: string; color: string; dot: string }> = {
+  'Director':                    { bg: '#003366', color: '#fff',    dot: '#001a33' },
+  'Deputy Registrar General':    { bg: '#006b8f', color: '#fff',    dot: '#004d66' },
+  'Deputy Director':             { bg: '#008080', color: '#fff',    dot: '#006060' },
+  'Assistant Director':          { bg: '#2e7d32', color: '#fff',    dot: '#1b5e20' },
+  'Senior Geographer':           { bg: '#f9a825', color: '#4a3000', dot: '#e65100' },
+  'Office Superintendent':       { bg: '#f57f17', color: '#fff',    dot: '#bf360c' },
+  'Statistical Investigator-I':  { bg: '#1565c0', color: '#fff',    dot: '#0d47a1' },
+  'Statistical Investigator-II': { bg: '#1976d2', color: '#fff',    dot: '#1565c0' },
+  'Multi Tasking Staff':         { bg: '#6a1b9a', color: '#fff',    dot: '#4a148c' },
+  'Canteen Attendant':           { bg: '#37474f', color: '#fff',    dot: '#263238' },
+};
 
 export default function WhoIsWhoPage() {
   const { language } = useLanguage();
   const isHi = language === 'hi';
 
   return (
-    <div style={{ backgroundColor: '#FFFFFF', minHeight: '85vh', paddingBottom: '60px' }}>
+    <div style={{ backgroundColor: '#f4f7fc', minHeight: '85vh', paddingBottom: '60px' }}>
       {/* Page Title Banner */}
       <div style={{ backgroundColor: 'var(--primary-color)', padding: '40px 0', borderBottom: '4px solid var(--secondary-color)' }}>
         <div className="container" style={{ padding: '0 24px' }}>
@@ -16,41 +59,108 @@ export default function WhoIsWhoPage() {
             {isHi ? 'हमारे बारे में' : 'About Us'}
           </p>
           <h1 style={{ color: '#fff', fontSize: '2.2rem', fontWeight: 700, margin: 0 }}>
-            {isHi ? 'कौन कौन है (प्रशासनिक पदानुक्रम)' : 'Who is Who (Key Administration)'}
+            {isHi ? 'कौन कौन है' : 'Who is Who'}
           </h1>
         </div>
       </div>
 
-      <div className="container" style={{ padding: '40px 16px' }}>
-        <div style={{ maxWidth: '1400px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ textAlign: 'center', marginBottom: '30px' }}>
-            <h2 style={{ fontSize: '2rem', color: 'var(--primary-color)', fontWeight: 800 }}>
-              {isHi ? 'अधिकारी पदानुक्रम' : 'Hierarchy of Key Officers'}
-            </h2>
-            <div style={{ width: '60px', height: '4px', backgroundColor: 'var(--secondary-color)', margin: '15px auto 0' }}></div>
-          </div>
-          
-          <div style={{ 
-            position: 'relative', 
-            width: '100%', 
-            minHeight: '900px',
-            backgroundColor: 'white',
+      <div className="container" style={{ padding: '50px 24px' }}>
+        <div style={{ maxWidth: '900px', margin: '0 auto' }}>
+
+          {/* Table Card */}
+          <div style={{
+            backgroundColor: '#fff',
             borderRadius: '16px',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-            padding: '20px',
-            overflowX: 'auto',
-            overflowY: 'auto'
+            boxShadow: '0 8px 32px rgba(0,0,0,0.10)',
+            overflow: 'hidden',
+            border: '1px solid #e2e8f0',
           }}>
-            <div style={{ position: 'relative', width: '100%', minWidth: '1000px', height: '1100px' }}>
-              <Image 
-                src="/Who is who.jpeg" 
-                alt="Who is Who - Key Administration Hierarchy Chart" 
-                layout="fill"
-                objectFit="contain"
-                priority
-              />
+            {/* Table Header Banner */}
+            <div style={{
+              backgroundColor: 'var(--primary-color)',
+              padding: '22px 32px',
+              textAlign: 'center',
+            }}>
+              <h2 style={{ color: '#fff', fontSize: '1.4rem', fontWeight: 800, margin: 0, letterSpacing: '0.04em' }}>
+                Directorate of Census Operations Tripura
+              </h2>
             </div>
+
+            {/* Column Headers */}
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: '1fr 1fr',
+              backgroundColor: 'var(--secondary-color)',
+            }}>
+              <div style={{ padding: '14px 28px', fontWeight: 800, fontSize: '1rem', color: 'var(--primary-color)', borderRight: '2px solid rgba(255,255,255,0.4)' }}>
+                Name of Officer / Official
+              </div>
+              <div style={{ padding: '14px 28px', fontWeight: 800, fontSize: '1rem', color: 'var(--primary-color)' }}>
+                Designation / Post
+              </div>
+            </div>
+
+            {/* Table Rows */}
+            {officers.map((officer, idx) => {
+              const style = designationColors[officer.designation] || { bg: '#f0f4f8', color: '#1e293b', dot: '#94a3b8' };
+              const isEven = idx % 2 === 0;
+              return (
+                <div
+                  key={idx}
+                  style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr',
+                    backgroundColor: isEven ? '#ffffff' : '#f8faff',
+                    borderBottom: '1px solid #e8edf5',
+                    transition: 'background 0.2s',
+                  }}
+                  onMouseEnter={e => (e.currentTarget.style.backgroundColor = '#eef4ff')}
+                  onMouseLeave={e => (e.currentTarget.style.backgroundColor = isEven ? '#ffffff' : '#f8faff')}
+                >
+                  {/* Name Cell */}
+                  <div style={{
+                    padding: '13px 28px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '10px',
+                    borderRight: '1px solid #e2e8f0',
+                    fontSize: '0.95rem',
+                    color: '#1e293b',
+                    fontWeight: 500,
+                  }}>
+                    <div style={{
+                      width: '8px', height: '8px', borderRadius: '50%',
+                      backgroundColor: style.dot, flexShrink: 0,
+                    }} />
+                    {officer.name}
+                  </div>
+                  {/* Designation Cell */}
+                  <div style={{
+                    padding: '13px 28px',
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}>
+                    <span style={{
+                      backgroundColor: style.bg,
+                      color: style.color,
+                      padding: '4px 14px',
+                      borderRadius: '20px',
+                      fontSize: '0.85rem',
+                      fontWeight: 600,
+                      letterSpacing: '0.01em',
+                      whiteSpace: 'nowrap',
+                    }}>
+                      {officer.designation}
+                    </span>
+                  </div>
+                </div>
+              );
+            })}
           </div>
+
+          <p style={{ textAlign: 'center', color: '#94a3b8', fontSize: '0.82rem', marginTop: '20px' }}>
+            * Information as updated for Directorate of Census Operations, Tripura
+          </p>
         </div>
       </div>
     </div>
