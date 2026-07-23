@@ -21,9 +21,9 @@ export default function WhoIsWhoPage() {
         </div>
       </div>
 
-      <div className="container" style={{ padding: '50px 24px' }}>
-        <div style={{ maxWidth: '1000px', margin: '0 auto', textAlign: 'center' }}>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+      <div className="container" style={{ padding: '40px 16px' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto', textAlign: 'center' }}>
+          <div style={{ textAlign: 'center', marginBottom: '30px' }}>
             <h2 style={{ fontSize: '2rem', color: 'var(--primary-color)', fontWeight: 800 }}>
               {isHi ? 'अधिकारी पदानुक्रम' : 'Hierarchy of Key Officers'}
             </h2>
@@ -33,19 +33,23 @@ export default function WhoIsWhoPage() {
           <div style={{ 
             position: 'relative', 
             width: '100%', 
-            minHeight: '600px',
+            minHeight: '900px',
             backgroundColor: 'white',
             borderRadius: '16px',
-            boxShadow: '0 4px 20px rgba(0,0,0,0.05)',
+            boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
             padding: '20px',
-            overflow: 'hidden'
+            overflowX: 'auto',
+            overflowY: 'auto'
           }}>
-            <Image 
-              src="/Who is who.jpeg" 
-              alt="Who is Who - Key Administration Hierarchy Chart" 
-              layout="fill"
-              objectFit="contain"
-            />
+            <div style={{ position: 'relative', width: '100%', minWidth: '1000px', height: '1100px' }}>
+              <Image 
+                src="/Who is who.jpeg" 
+                alt="Who is Who - Key Administration Hierarchy Chart" 
+                layout="fill"
+                objectFit="contain"
+                priority
+              />
+            </div>
           </div>
         </div>
       </div>
