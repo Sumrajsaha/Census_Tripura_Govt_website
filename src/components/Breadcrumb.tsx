@@ -15,8 +15,8 @@ export default function Breadcrumb() {
 
   // Map URL segments to human-friendly breadcrumb labels
   const segmentLabelMap: Record<string, { en: string; hi: string }> = {
-    'information': { en: 'About Census', hi: 'जनगणना के बारे में' },
-    'about':       { en: 'About',        hi: 'के बारे में' },
+    'about-census': { en: 'About Census', hi: 'जनगणना के बारे में' },
+    'about':        { en: 'About',        hi: 'के बारे में' },
   };
 
   const getSegmentLabel = (segment: string) => {

@@ -142,11 +142,11 @@ export default function NavigationLinks() {
     },
     {
       name: 'About Census',
-      path: '/information',
+      path: '/about-census',
       children: [
-        { name: 'History of Census in India', path: '/information/history' },
-        { name: 'House Listing Operations', path: '/information/hlo' },
-        { name: 'Population Enumeration', path: '/information/pe' },
+        { name: 'History of Census in India', path: '/about-census/history' },
+        { name: 'House Listing Operations', path: '/about-census/hlo' },
+        { name: 'Population Enumeration', path: '/about-census/pe' },
       ],
     },
     { name: 'Circulars', path: '/circulars' },

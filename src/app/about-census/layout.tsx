@@ -23,7 +23,7 @@ export default function InformationLayout({ children }: { children: ReactNode })
         '@type': 'ListItem',
         position: 2,
         name: 'About Census',
-        item: `${baseUrl}/information`,
+        item: `${baseUrl}/about-census`,
       },
     ],
   };
