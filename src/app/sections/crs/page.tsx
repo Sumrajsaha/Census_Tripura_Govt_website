@@ -75,7 +75,7 @@ export default function CRSPage() {
               {isHi ? (
                 `नागरिक पंजीकरण प्रणाली (सीआरएस), जिसे आमतौर पर जन्म और मृत्यु पंजीकरण प्रणाली के रूप में जाना जाता है, देश में जन्म, मृत्यु और मृत जन्म की महत्वपूर्ण घटनाओं को कानूनी प्रावधानों के अंतर्गत दर्ज करने की एक सतत और स्थायी प्रक्रिया है। सीआरएस से उत्पन्न आंकड़े विभिन्न जनसांख्यिकीय नीतियों के निर्माण में अत्यंत महत्वपूर्ण भूमिका निभाते हैं।`
               ) : (
-                `The Civil Registration System (CRS) is the continuous, permanent, and compulsory recording of vital events such as births, deaths, and stillbirths. Statistical insights generated from civil registration contribute significantly to evidentiary policy-making across national and state-level government sectors.`
+                `Civil Registration System (CRS), popularly known as birth and death registration system, is the recording of vital events i.e. Birth, Death & Still Birth under the statutory provisions on continuous and permanent basis. CRS falls under the Concurrent list of the Constitution of India at Sl. No. 30. Vital statistics generated from civil registration significantly contribute to the formulation of effective and efficient evidence-based policy across multiple sectors.`
               )}
             </p>
           </section>
@@ -86,15 +86,27 @@ export default function CRSPage() {
               {isHi ? (
                 `भारत में जन्म और मृत्यु का पंजीकरण एक केंद्रीय कानून "जन्म और मृत्यु पंजीकरण (RBD) अधिनियम, 1969" के अंतर्गत अनिवार्य है। घटना के स्थान पर ही पंजीकरण कराया जाना आवश्यक है। घटना की सूचना दर्ज करने की सामान्य अवधि 21 दिन निर्धारित की गई है। इस समय सीमा के पश्चात अधिनियम की धारा 13 के तहत विलंबित शुल्क के साथ पंजीकरण किया जा सकता है।`
               ) : (
-                `The registration of vital events is regulated by the Central legislation "Registration of Births and Deaths (RBD) Act, 1969". Reporting is mandatory at the place of occurrence of the event within the normal reporting period of 21 days. Delayed registration is governed under Section 13 of the Act.`
+                <>
+                  The registration of birth and death is done under the provisions of a central Act Namely Registration of Births and Deaths (RBD) Act, 1969 and State Rules framed on the basis of Model Rules, 1999. This Act was enacted in the year 1969 and was enforced in most of the States/UTs from 1st April, 1970 to promote uniformity and comparability in the registration of Births and Deaths across the country.
+                  <br /><br />
+                  Under the provisions of RBD Act, 1969, the registration of birth and death is mandatory. The events of births, still births and deaths are registered at the place of occurrence of the event i.e. where the event took place. The normal period of reporting the event is 21 days from its occurrence, however, the event can be registered after the normal period under delayed registration provisions of Section 13 of the RBD Act.
+                </>
               )}
             </p>
           </section>
 
           <section style={card}>
-            <h2 style={sectionHeading}>{isHi ? 'प्रशासनिक संरचना' : 'Administrative Functionaries'}</h2>
+            <h2 style={sectionHeading}>{isHi ? 'प्रशासनिक संरचना' : 'Registration Functionaries'}</h2>
             
-            <div style={{ marginTop: '20px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
+            <p style={para}>
+              {isHi ? (
+                `प्रशासनिक संरचना के तहत केंद्र स्तर पर भारत के महारजिस्ट्रार (आरजीआई) पंजीकरण गतिविधियों का समन्वय और एकीकरण करते हैं। राज्य स्तर पर मुख्य रजिस्ट्रार मुख्य कार्यकारी अधिकारी के रूप में कार्य करते हैं। जिला स्तर पर जिला रजिस्ट्रार और स्थानीय स्तर पर रजिस्ट्रार घटनाओं का पंजीकरण करने और जन्म-मृत्यु प्रमाण पत्र जारी करने के लिए जिम्मेदार होते हैं।`
+              ) : (
+                `The Registrar General, India (RGI) at the Central level coordinates and unifies the activities of registration throughout the country and at the same time allowing enough scope for the State Governments to evolve an efficient system of registration suited to the characteristics of the respective administration and notify rules. As per the provisions of the Act, the contemporary system is implemented by State Governments/UT Administrations. Accordingly, the State authority (Chief Registrar) has been declared as the chief executive authority in the respective State for implementing the provisions of this Act, Rules and order framed thereunder. Similarly, the District Registrar for each district within the State is responsible for carrying into execution the provision of RBD Act and Rules in respective district. At lowest level, the Registrars are responsible for registering the events occurred in his/her area of jurisdiction and issue certificates of birth and death, as the case may be.`
+              )}
+            </p>
+
+            <div style={{ marginTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
               {hierarchy.map((level, i, arr) => (
                 <div key={level.labelEn} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
                   <div
