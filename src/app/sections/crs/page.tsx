@@ -38,19 +38,6 @@ export default function CRSPage() {
       : 'Civil Registration System (CRS) | DCO Tripura';
   }, [isHi]);
 
-  const hierarchy = [
-    { labelEn: 'Registrar General of India (RGI)', labelHi: 'भारत के महारजिस्ट्रार (आरजीआई)', subEn: 'Central Level — Coordination & Unification', subHi: 'केन्द्रीय स्तर — समन्वय और एकीकरण', color: 'var(--primary-color)' },
-    { labelEn: 'Chief Registrar', labelHi: 'मुख्य रजिस्ट्रार', subEn: 'State Level — Chief Executive Authority', subHi: 'राज्य स्तर — मुख्य कार्यकारी प्राधिकारी', color: 'var(--secondary-color)' },
-    { labelEn: 'District Registrar', labelHi: 'जिला रजिस्ट्रार', subEn: 'District Level — Implementation of RBD Act', subHi: 'जिला स्तर — जन्म-मृत्यु पंजीकरण अधिनियम कार्यान्वयन', color: '#1e40af' },
-    { labelEn: 'Registrar', labelHi: 'रजिस्ट्रार (स्थानीय)', subEn: 'Local Level — Registration of Events & Certificates', subHi: 'स्थानीय स्तर — घटना पंजीकरण एवं प्रमाण पत्र जारी करना', color: '#0f766e' },
-  ];
-
-  const keyFacts = [
-    { labelEn: 'Governing Act', labelHi: 'शासी अधिनियम', valueEn: 'RBD Act, 1969', valueHi: 'आरबीडी अधिनियम, 1969' },
-    { labelEn: 'Enforced From', labelHi: 'लागू होने की तिथि', valueEn: '1st April 1970', valueHi: '1 अप्रैल 1970' },
-    { labelEn: 'Reporting Period', labelHi: 'रिपोर्टिंग अवधि', valueEn: '21 Days', valueHi: '21 दिन' },
-    { labelEn: 'Constitution List', labelHi: 'संविधान अनुसूची', valueEn: 'Concurrent List – Sl. 30', valueHi: 'समवर्ती सूची – सं. 30' },
-  ];
 
   return (
     <div style={{ backgroundColor: '#FFFFFF', minHeight: '75vh', paddingBottom: '60px' }}>
@@ -105,67 +92,7 @@ export default function CRSPage() {
                 `The Registrar General, India (RGI) at the Central level coordinates and unifies the activities of registration throughout the country and at the same time allowing enough scope for the State Governments to evolve an efficient system of registration suited to the characteristics of the respective administration and notify rules. As per the provisions of the Act, the contemporary system is implemented by State Governments/UT Administrations. Accordingly, the State authority (Chief Registrar) has been declared as the chief executive authority in the respective State for implementing the provisions of this Act, Rules and order framed thereunder. Similarly, the District Registrar for each district within the State is responsible for carrying into execution the provision of RBD Act and Rules in respective district. At lowest level, the Registrars are responsible for registering the events occurred in his/her area of jurisdiction and issue certificates of birth and death, as the case may be.`
               )}
             </p>
-
-            <div style={{ marginTop: '30px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0' }}>
-              {hierarchy.map((level, i, arr) => (
-                <div key={level.labelEn} style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', width: '100%' }}>
-                  <div
-                    style={{
-                      backgroundColor: level.color,
-                      color: '#fff',
-                      borderRadius: '8px',
-                      padding: '14px 28px',
-                      textAlign: 'center',
-                      maxWidth: '520px',
-                      width: '100%',
-                      boxShadow: '0 4px 12px rgba(0,0,0,0.08)',
-                    }}
-                  >
-                    <div style={{ fontWeight: 700, fontSize: '1rem' }}>
-                      {isHi ? level.labelHi : level.labelEn}
-                    </div>
-                    <div style={{ fontSize: '0.8rem', opacity: 0.9, marginTop: '4px' }}>
-                      {isHi ? level.subHi : level.subEn}
-                    </div>
-                  </div>
-                  {i < arr.length - 1 && (
-                    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-                      <div style={{ width: '2px', height: '20px', backgroundColor: '#94a3b8' }} />
-                      <div style={{ width: 0, height: 0, borderLeft: '6px solid transparent', borderRight: '6px solid transparent', borderTop: '8px solid #94a3b8' }} />
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
           </section>
-
-          {/* Key Facts strip */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px', marginTop: '30px' }}>
-            {keyFacts.map(f => (
-              <div
-                key={f.labelEn}
-                style={{
-                  backgroundColor: '#fff',
-                  borderRadius: '12px',
-                  padding: '20px',
-                  boxShadow: '0 4px 15px rgba(0,0,0,0.03)',
-                  borderTop: '4px solid var(--secondary-color)',
-                  borderLeft: '1px solid #e2e8f0',
-                  borderRight: '1px solid #e2e8f0',
-                  borderBottom: '1px solid #e2e8f0',
-                  textAlign: 'center',
-                }}
-              >
-                <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.06em' }}>
-                  {isHi ? f.labelHi : f.labelEn}
-                </div>
-                <div style={{ marginTop: '8px', fontWeight: 700, fontSize: '1.05rem', color: 'var(--primary-color)' }}>
-                  {isHi ? f.valueHi : f.valueEn}
-                </div>
-              </div>
-            ))}
-          </div>
-
         </div>
       </div>
     </div>
