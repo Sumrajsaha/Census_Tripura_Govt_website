@@ -33,9 +33,9 @@ export default function MappingPage() {
   const isHi = language === 'hi';
 
   useEffect(() => {
-    document.title = isHi 
-      ? 'मानचित्र और जीआईएस अनुभाग | जनगणना कार्य निदेशालय' 
-      : 'Map & GIS Section | DCO Tripura';
+    document.title = isHi
+      ? 'मानचित्र | जनगणना कार्य निदेशालय'
+      : 'Map | DCO Tripura';
   }, [isHi]);
 
   return (
@@ -47,14 +47,14 @@ export default function MappingPage() {
             {isHi ? 'हमारे अनुभाग' : 'Our Sections'}
           </p>
           <h1 style={{ color: '#fff', fontSize: '2.2rem', fontWeight: 700, margin: 0 }}>
-            {isHi ? 'मानचित्र एवं भौगोलिक सूचना प्रणाली (जीआईएस) अनुभाग' : 'Map & GIS Section'}
+            {isHi ? 'मानचित्र' : 'Map'}
           </h1>
         </div>
       </div>
 
       <div className="container" style={{ padding: '50px 24px' }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
-          
+
           <section style={card}>
             <h2 style={sectionHeading}>{isHi ? 'परिचय' : 'Overview'}</h2>
             <p style={para}>
